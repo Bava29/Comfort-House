@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comfort House</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- =========================================
+     Header
+========================================= -->
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <!-- Logo -->
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.png" alt="Comfort House">
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <nav class="main-nav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+                        <li>
+                            <a href="index.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <a href="#" class="dropdown-toggle active">
+                                Sleep &amp; Care
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="sleep-guide.html">Sleep Guide</a>
+                                </li>
+
+                                <li>
+                                    <a href="pillows-bedding.html">
+                                        Pillows &amp; Bedding
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="trial-returns.html" class="active">
+                                        Trial Period &amp; Returns
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-delivery.html">
+                                        Home Delivery
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- Desktop Actions -->
+                <div class="header-actions">
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                        title="Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode"
+                        title="RTL Mode">
+                        <i class="fa-solid fa-right-left"></i>
+                    </button>
+
+                    <!-- Login -->
+                    <a href="login.html" class="login-btn">
+                        <span>Login</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Menu Button -->
+                <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu">
+
+            <div class="mobile-menu-inner">
+
+                <nav class="mobile-nav" aria-label="Mobile Navigation">
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li class="mobile-dropdown">
+
+                            <button type="button" class="mobile-dropdown-toggle" aria-expanded="false">
+                                <span>Sleep &amp; Care</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+
+                            <ul class="mobile-dropdown-menu">
+
+                                <li>
+                                    <a href="sleep-guide.html">
+                                        Sleep Guide
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pillows-bedding.html">
+                                        Pillows &amp; Bedding
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="trial-returns.html">
+                                        Trial Period &amp; Returns
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-delivery.html">
+                                        Home Delivery
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- Mobile Actions -->
+                <div class="mobile-actions">
+
+                    <button type="button" class="mobile-action-btn theme-toggle">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                    </button>
+
+
+                    <button type="button" class="mobile-action-btn rtl-toggle">
+                        <span>
+                            <i class="fa-solid fa-right-left"></i>
+                            RTL Mode
+                        </span>
+                    </button>
+
+
+                    <a href="login.html" class="mobile-login-btn">
+
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+     INNER PAGE HERO
+========================= -->
+    <section class="inner-page-hero sleep-banner">
+
+        <div class="inner-page-hero-overlay"></div>
+
+        <div class="inner-page-hero-content">
+            <h1>Try It. Love It. Sleep Better.</h1>
+        </div>
+
+    </section>
+
+
+    <section class="trial-process-section">
+        <div class="container">
+
+            <div class="trial-process-heading">
+                <span class="trial-process-label">
+                    YOUR TRIAL PERIOD
+                </span>
+
+                <h2>
+                    Try It At Home.<br>
+                    <em>Take Your Time.</em>
+                </h2>
+
+                <p>
+                    Your mattress needs time to feel like home. Our trial
+                    period gives you the opportunity to sleep on it,
+                    experience the comfort and decide if it is right for you.
+                </p>
+            </div>
+
+            <div class="trial-process-steps">
+
+                <div class="trial-process-step">
+                    <span class="trial-process-number">01</span>
+
+                    <div class="trial-process-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+
+                    <h3>Receive</h3>
+
+                    <p>
+                        Your mattress arrives complete safely at your home, ready
+                        for you to set up and enjoy.
+                    </p>
+                </div>
+
+
+                <div class="trial-process-step">
+                    <span class="trial-process-number">02</span>
+
+                    <div class="trial-process-icon">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+
+                    <h3>Sleep</h3>
+
+                    <p>
+                        Give yourself time to experience the mattress
+                        through your everyday sleep.
+                    </p>
+                </div>
+
+
+                <div class="trial-process-step">
+                    <span class="trial-process-number">03</span>
+
+                    <div class="trial-process-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3>Decide</h3>
+
+                    <p>
+                        If it feels very right, keep enjoying it. If not,
+                        you can start the return process.
+                    </p>
+                </div>
+
+
+                <div class="trial-process-step">
+                    <span class="trial-process-number">04</span>
+
+                    <div class="trial-process-icon">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+
+                    <h3>Return</h3>
+
+                    <p>
+                        Contact our team and we'll guide you through
+                        the next steps of the return process.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="return-info-section">
+        <div class="container">
+
+            <div class="return-info-heading">
+                <span>BEFORE YOU RETURN</span>
+                <h2>A Few Things To Know First.</h2>
+                <p>
+                    Before starting a return, take a moment to review these simple
+                    points. They’ll help make the process easier and smoother.
+                </p>
+            </div>
+
+            <div class="return-info-layout">
+
+                <!-- Left -->
+                <div class="return-info-list">
+
+                    <div class="return-info-item">
+                        <div class="return-info-number">01</div>
+                        <div class="return-info-content">
+                            <h3>Check Your Order</h3>
+                            <p>
+                                Keep your order details handy so our team can quickly
+                                help you with your return request.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="return-info-item">
+                        <div class="return-info-number">02</div>
+                        <div class="return-info-content">
+                            <h3>Keep The Details Ready</h3>
+                            <p>
+                                Have the mattress and delivery information available
+                                when contacting our support team.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="return-info-item">
+                        <div class="return-info-number">03</div>
+                        <div class="return-info-content">
+                            <h3>Contact Our Team</h3>
+                            <p>
+                                Reach out to us before arranging a return. We’ll explain
+                                the next steps based on your order.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="return-info-note">
+                    <div class="return-info-note-icon">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+
+                    <span>NEED HELP?</span>
+
+                    <h3>We're Here To Make It Easier.</h3>
+
+                    <p>
+                        Not sure whether your order is eligible for a return?
+                        Our Comfort House team can help you understand the process
+                        and answer your questions.
+                    </p>
+
+                    <a href="#">
+                        Contact Support
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="return-start-section">
+        <div class="container">
+
+            <div class="return-start-heading">
+                <span>START YOUR RETURN</span>
+                <h2>Ready To Begin?</h2>
+                <p>
+                    If you’ve decided that your mattress isn’t the right fit,
+                    getting started is simple. Follow these steps to connect
+                    with our team.
+                </p>
+            </div>
+
+            <div class="return-start-grid">
+
+                <div class="return-start-card">
+                    <div class="return-start-top">
+                        <span>01</span>
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        Contact our Comfort House support team and let us know
+                        that you would like to request a return.
+                    </p>
+
+                    <a href="#">
+                        Contact Us
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <div class="return-start-card">
+                    <div class="return-start-top">
+                        <span>02</span>
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+
+                    <h3>Share Details</h3>
+
+                    <p>
+                        Provide your order information so our team can review
+                        your request and explain the next steps.
+                    </p>
+
+                    <a href="#">
+                        View Contact Details
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <div class="return-start-card">
+                    <div class="return-start-top">
+                        <span>03</span>
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>We'll Guide You</h3>
+
+                    <p>
+                        Our team will help you understand the return process
+                        and guide you through what happens next.
+                    </p>
+
+                    <a href="#">
+                        Get Support
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trial-final-cta-section">
+        <div class="trial-final-cta-overlay"></div>
+
+        <div class="container">
+            <div class="trial-final-cta-content">
+
+                <span class="trial-final-cta-label">
+                    STILL HAVE QUESTIONS?
+                </span>
+
+                <h2>
+                    Your Comfort Matters.
+                    <em>We're Here To Help.</em>
+                </h2>
+
+                <p>
+                    Whether you’re wondering about your trial, return options,
+                    or simply need help choosing the right comfort, our team
+                    is always ready to help.
+                </p>
+
+                <div class="trial-final-cta-actions">
+                    <a href="#" class="trial-final-cta-primary">
+                        Contact Our Team
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#" class="trial-final-cta-secondary">
+                        Explore Our Collection
+                    </a>
+                </div>
+
+                <div class="trial-final-cta-contact">
+                    <div class="trial-final-cta-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+
+                    <div class="trial-final-cta-contact-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>hello@comforthouse.com</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+     Footer
+========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-white.png" alt="Comfort House">
+                    </a>
+
+                    <p>
+                        Thoughtfully made mattresses and bedding designed
+                        to bring comfort, support, and better sleep into
+                        everyday life.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="home-1.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Sleep & Care -->
+                <div class="footer-column">
+
+                    <h3>Sleep &amp; Care</h3>
+
+                    <ul>
+                        <li>
+                            <a href="sleep-guide.html">Sleep Guide</a>
+                        </li>
+
+                        <li>
+                            <a href="pillows-bedding.html">
+                                Pillows &amp; Bedding
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="trial-returns.html">
+                                Trial &amp; Returns
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home-delivery.html">
+                                Home Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Our Store</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                24 Comfort Street,<br>
+                                Chennai, Tamil nadu.
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+919876543210">
+                                +91 98765 43210
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:hello@comforthouse.com">
+                                hello@comforthouse.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>
+                                Mon – Sat: 9:00 AM – 7:00 PM
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Comfort House. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="trial-returns.html">
+                        Trial &amp; Returns
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button type="button" class="scroll-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

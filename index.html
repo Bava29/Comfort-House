@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comfort House</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- =========================================
+     Header
+========================================= -->
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <!-- Logo -->
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.png" alt="Comfort House">
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <nav class="main-nav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+                        <li>
+                            <a href="index.html" class="active">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <a href="#" class="dropdown-toggle">
+                                Sleep &amp; Care
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="sleep-guide.html">Sleep Guide</a>
+                                </li>
+
+                                <li>
+                                    <a href="pillows-bedding.html">
+                                        Pillows &amp; Bedding
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="trial-returns.html">
+                                        Trial Period &amp; Returns
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-delivery.html">
+                                        Home Delivery
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- Desktop Actions -->
+                <div class="header-actions">
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                        title="Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode"
+                        title="RTL Mode">
+                        <i class="fa-solid fa-right-left"></i>
+                    </button>
+
+                    <!-- Login -->
+                    <a href="login.html" class="login-btn">
+                        <span>Login</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Menu Button -->
+                <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu">
+
+            <div class="mobile-menu-inner">
+
+                <nav class="mobile-nav" aria-label="Mobile Navigation">
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li class="mobile-dropdown">
+
+                            <button type="button" class="mobile-dropdown-toggle" aria-expanded="false">
+                                <span>Sleep &amp; Care</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+
+                            <ul class="mobile-dropdown-menu">
+
+                                <li>
+                                    <a href="sleep-guide.html">
+                                        Sleep Guide
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pillows-bedding.html">
+                                        Pillows &amp; Bedding
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="trial-returns.html">
+                                        Trial Period &amp; Returns
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-delivery.html">
+                                        Home Delivery
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- Mobile Actions -->
+                <div class="mobile-actions">
+
+                    <button type="button" class="mobile-action-btn theme-toggle">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                    </button>
+
+
+                    <button type="button" class="mobile-action-btn rtl-toggle">
+                        <span>
+                            <i class="fa-solid fa-right-left"></i>
+                            RTL Mode
+                        </span>
+                    </button>
+
+
+                    <a href="login.html" class="mobile-login-btn">
+
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+     Home 1 - Hero Section
+========================================= -->
+
+    <section class="home-hero">
+
+        <div class="home-hero-image">
+            <img src="images/home-hero.jpg" alt="Comfortable bedroom with premium mattress">
+        </div>
+
+        <div class="home-hero-overlay"></div>
+
+        <div class="container">
+
+            <!-- Hero Content -->
+            <div class="home-hero-content">
+
+                <span class="hero-eyebrow">
+                    PREMIUM MATTRESSES &amp; BEDDING
+                </span>
+
+                <h1>
+                    Better Sleep
+                    <span>For A Brighter You</span>
+                </h1>
+
+                <p>
+                    Discover premium mattresses, pillows and bedding
+                    designed for lasting comfort and healthier sleep.
+                </p>
+
+                <a href="products.html" class="hero-btn">
+                    Explore Collection
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Category Cards -->
+            <div class="hero-cards">
+
+                <!-- Card 01 -->
+                <div class="hero-card">
+
+                    <div class="hero-card-image">
+                        <img src="images/h1.png" alt="Premium mattress">
+                    </div>
+
+                    <div class="hero-card-content">
+
+                        <h3>Soft Mattresses</h3>
+
+                        <p>
+                            Support, comfort and quality for
+                            sleep style.
+                        </p>
+
+                        <a href="products.html" class="hero-card-btn">
+                            Shop Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 02 -->
+                <div class="hero-card">
+
+                    <div class="hero-card-image">
+                        <img src="images/pillows-card.png" alt="Pillows and bedding">
+                    </div>
+
+                    <div class="hero-card-content">
+
+                        <h3>Pillows &amp; Bedding</h3>
+
+                        <p>
+                            Soft and designed for
+                            everyday comfort.
+                        </p>
+
+                        <a href="pillows-bedding.html" class="hero-card-btn">
+                            Shop Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 03 -->
+                <div class="hero-card">
+
+                    <div class="hero-card-image">
+                        <img src="images/h3.png" alt="Sleep essentials">
+                    </div>
+
+                    <div class="hero-card-content">
+
+                        <h3>Sleep Essentials</h3>
+
+                        <p>
+                            Complete your sleep space with our
+                            premium range.
+                        </p>
+
+                        <a href="pillows-bedding.html" class="hero-card-btn">
+                            Shop Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+     Section 2 - Find Your Perfect Comfort
+========================================= -->
+
+    <section class="comfort-section">
+
+        <div class="container">
+
+            <div class="comfort-wrapper">
+
+                <!-- Image -->
+                <div class="comfort-image">
+
+                    <img src="images/comfort-mattress.jpg" alt="Premium mattress in a comfortable bedroom">
+
+                    <div class="comfort-image-badge">
+                        <span>Sleep</span>
+                        <strong>Made Better</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Content -->
+                <div class="comfort-content">
+
+                    <span class="section-tag">
+                        CHOOSE YOUR COMFORT
+                    </span>
+
+                    <h2>
+                        Comfort That Fits
+                        <span>Your Way of Sleeping</span>
+                    </h2>
+
+                    <p>
+                        Everyone sleeps differently. Explore thoughtfully
+                        designed mattress types made to provide the support,
+                        softness, and comfort that feels right for you.
+                    </p>
+
+
+                    <!-- Mattress Types -->
+
+                    <div class="comfort-options">
+
+                        <!-- Option 01 -->
+                        <a href="products.html" class="comfort-option">
+
+                            <div class="comfort-option-icon">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+
+                            <div class="comfort-option-content">
+
+                                <h3>Memory Foam</h3>
+
+                                <span>
+                                    Contouring comfort &amp; pressure relief
+                                </span>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right comfort-arrow"></i>
+
+                        </a>
+
+
+                        <!-- Option 02 -->
+                        <a href="products.html" class="comfort-option">
+
+                            <div class="comfort-option-icon">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+
+                            <div class="comfort-option-content">
+
+                                <h3>Spring</h3>
+
+                                <span>
+                                    Responsive support &amp; airflow
+                                </span>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right comfort-arrow"></i>
+
+                        </a>
+
+
+                        <!-- Option 03 -->
+                        <a href="products.html" class="comfort-option">
+
+                            <div class="comfort-option-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+
+                            <div class="comfort-option-content">
+
+                                <h3>Latex</h3>
+
+                                <span>
+                                    Natural feel &amp; breathable comfort
+                                </span>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right comfort-arrow"></i>
+
+                        </a>
+
+
+                        <!-- Option 04 -->
+                        <a href="products.html" class="comfort-option">
+
+                            <div class="comfort-option-icon">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+
+                            <div class="comfort-option-content">
+
+                                <h3>Orthopaedic</h3>
+
+                                <span>
+                                    Targeted support for restful sleep
+                                </span>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right comfort-arrow"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Section 3 - Why Comfort House
+========================================= -->
+
+    <section class="why-comfort-section">
+
+        <div class="container">
+
+            <div class="why-comfort-header">
+
+                <div class="why-comfort-title">
+
+                    <span class="section-tag">
+                        WHY COMFORT HOUSE
+                    </span>
+
+                    <h2>
+                        More Than A Mattress.
+                        <span>A Better Way To Sleep.</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    From carefully selected materials to thoughtful comfort,
+                    every detail is designed to help you sleep better and
+                    wake up feeling refreshed.
+                </p>
+
+            </div>
+
+
+            <div class="why-comfort-grid">
+
+                <!-- Benefit 01 -->
+                <div class="why-comfort-card">
+
+                    <div class="why-comfort-number">
+                        01
+                    </div>
+
+                    <div class="why-comfort-icon">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+
+                    <h3>
+                        Thoughtful Comfort
+                    </h3>
+
+                    <p>
+                        Mattress designs that created to provide the very right balance soft, confident support and
+                        relief.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefit 02 -->
+                <div class="why-comfort-card">
+
+                    <div class="why-comfort-number">
+                        02
+                    </div>
+
+                    <div class="why-comfort-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <h3>
+                        Quality Materials
+                    </h3>
+
+                    <p>
+                        Carefully selected materials made for lasting comfort,
+                        breathability and everyday durability.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefit 03 -->
+                <div class="why-comfort-card">
+
+                    <div class="why-comfort-number">
+                        03
+                    </div>
+
+                    <div class="why-comfort-icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+
+                    <h3>
+                        Easy Delivery
+                    </h3>
+
+                    <p>
+                        Enjoy a smooth delivery experience with your new
+                        mattress brought conveniently to your doorstep.
+                    </p>
+
+                </div>
+
+
+                <!-- Benefit 04 -->
+                <div class="why-comfort-card">
+
+                    <div class="why-comfort-number">
+                        04
+                    </div>
+
+                    <div class="why-comfort-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <h3>
+                        Sleep Confidently
+                    </h3>
+
+                    <p>
+                        Friendly support guidance and dependable support to help you
+                        find comfort that feels right for you.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-comfort-bottom">
+
+                <span>
+                    Designed around your comfort
+                </span>
+
+                <a href="about.html">
+                    Discover Our Story
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Section 3 - The Comfort Journey
+========================================= -->
+
+    <section class="sleep-journey-section">
+
+        <div class="container">
+
+            <!-- Section Intro -->
+            <div class="sleep-journey-intro">
+
+                <span class="section-tag">
+                    THE COMFORT JOURNEY
+                </span>
+
+                <h2>
+                    From The Moment You Lie Down
+                    <span>To The Moment You Wake Up</span>
+                </h2>
+
+                <p>
+                    Better sleep is about more than choosing a mattress.
+                    It is about creating a complete sleep experience where
+                    every layer works together for deeper comfort.
+                </p>
+
+            </div>
+
+
+            <!-- Main Journey -->
+            <div class="sleep-journey-main">
+
+
+                <!-- Left Visual -->
+                <div class="sleep-journey-visual">
+
+                    <div class="sleep-journey-image">
+
+                        <img src="images/sleep-journey.jpg" alt="Premium mattress and elegant bedroom">
+
+                    </div>
+
+
+                    <div class="sleep-journey-quote">
+
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        <p>
+                            “The right comfort can change the way
+                            you experience every morning.”
+                        </p>
+
+                        <span>
+                            — Comfort House
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Journey Steps -->
+                <div class="sleep-journey-content">
+
+
+                    <!-- Step 01 -->
+                    <div class="sleep-step">
+
+                        <div class="sleep-step-number">
+                            01
+                        </div>
+
+                        <div class="sleep-step-line"></div>
+
+                        <div class="sleep-step-content">
+
+                            <span>
+                                SUPPORT
+                            </span>
+
+                            <h3>
+                                Find Your Right Foundation
+                            </h3>
+
+                            <p>
+                                Choose mattress support that works naturally
+                                with your sleeping position and comfort preference.
+                            </p>
+
+                            <a href="products.html">
+                                Explore Mattresses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Step 02 -->
+                    <div class="sleep-step">
+
+                        <div class="sleep-step-number">
+                            02
+                        </div>
+
+                        <div class="sleep-step-line"></div>
+
+                        <div class="sleep-step-content">
+
+                            <span>
+                                SOFTNESS
+                            </span>
+
+                            <h3>
+                                Layer In Everyday Comfort
+                            </h3>
+
+                            <p>
+                                Complete your sleep space with pillows and
+                                bedding selected for softness, breathability
+                                and relaxation.
+                            </p>
+
+                            <a href="pillows-bedding.html">
+                                Discover Bedding
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Step 03 -->
+                    <div class="sleep-step">
+
+                        <div class="sleep-step-number">
+                            03
+                        </div>
+
+                        <div class="sleep-step-line"></div>
+
+                        <div class="sleep-step-content">
+
+                            <span>
+                                REST
+                            </span>
+
+                            <h3>
+                                Wake Up Ready For More
+                            </h3>
+
+                            <p>
+                                A thoughtfully designed sleep environment helps
+                                you end the day comfortably and begin the next
+                                one feeling refreshed.
+                            </p>
+
+                            <a href="sleep-guide.html">
+                                Learn About Better Sleep
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Statement -->
+            <div class="sleep-journey-bottom">
+
+                <div class="sleep-journey-bottom-line"></div>
+
+                <span>
+                    Comfort designed around you
+                </span>
+
+                <div class="sleep-journey-bottom-line"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Section 4 - Complete Your Sleep Space
+========================================= -->
+
+    <section class="sleep-space-section">
+
+        <div class="container">
+
+            <div class="sleep-space-wrapper">
+
+                <!-- Left Content -->
+                <div class="sleep-space-content">
+
+                    <span class="section-tag">
+                        COMPLETE YOUR SLEEP SPACE
+                    </span>
+
+                    <h2>
+                        Every Layer Of
+                        <span>Comfort Matters</span>
+                    </h2>
+
+                    <p>
+                        From the foundation beneath you to the softness around
+                        you, create a sleep space that feels naturally calm,
+                        comfortable and completely yours.
+                    </p>
+
+                    <a href="pillows-bedding.html" class="sleep-space-btn">
+                        Explore Sleep Essentials
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Center Image -->
+                <div class="sleep-space-visual">
+
+                    <div class="sleep-space-image">
+                        <img src="images/sleep-space.jpg" alt="Premium bedding and comfortable sleep space">
+                    </div>
+
+                    <div class="sleep-space-badge">
+                        <span>COMFORT</span>
+                        <strong>In Every Layer</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Right Categories -->
+                <div class="sleep-space-list">
+
+                    <a href="products.html" class="sleep-space-item">
+
+                        <div class="sleep-space-item-number">
+                            01
+                        </div>
+
+                        <div class="sleep-space-item-content">
+
+                            <h3>
+                                Mattress
+                            </h3>
+
+                            <p>
+                                The foundation for balanced,
+                                supportive & peaceful sleep.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a href="pillows-bedding.html" class="sleep-space-item">
+
+                        <div class="sleep-space-item-number">
+                            02
+                        </div>
+
+                        <div class="sleep-space-item-content">
+
+                            <h3>
+                                Pillows
+                            </h3>
+
+                            <p>
+                                Personalised support for your
+                                head and neck.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a href="pillows-bedding.html" class="sleep-space-item">
+
+                        <div class="sleep-space-item-number">
+                            03
+                        </div>
+
+                        <div class="sleep-space-item-content">
+
+                            <h3>
+                                Bedding
+                            </h3>
+
+                            <p>
+                                Soft textures that make winding
+                                down feel effortless.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a href="pillows-bedding.html" class="sleep-space-item">
+
+                        <div class="sleep-space-item-number">
+                            04
+                        </div>
+
+                        <div class="sleep-space-item-content">
+
+                            <h3>
+                                Sleep Accessories
+                            </h3>
+
+                            <p>
+                                Thoughtful finishing touches for
+                                your perfect sleep environment.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Section 5 - Sleep Better, Live Better
+========================================= -->
+
+    <section class="better-sleep-section">
+
+        <div class="container">
+
+            <div class="better-sleep-wrapper">
+
+                <!-- Left Visual -->
+                <div class="better-sleep-visual">
+
+                    <div class="better-sleep-main-image">
+                        <img src="images/better-sleep.jpg" alt="Peaceful bedroom with premium bedding">
+                    </div>
+
+                    <div class="better-sleep-small-image">
+                        <img src="images/better-sleep-detail.jpg" alt="Soft premium bedding detail">
+                    </div>
+
+                    <div class="better-sleep-label">
+                        <span>COMFORT HOUSE</span>
+                        <strong>Sleep Well. Live Well.</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Right Content -->
+                <div class="better-sleep-content">
+
+                    <span class="section-tag">
+                        SLEEP WELL, FEEL BETTER
+                    </span>
+
+                    <h2>
+                        Your Best Days
+                        <span>Begin With Better Nights</span>
+                    </h2>
+
+                    <p>
+                        Quality sleep gives your body time to rest, recover and
+                        recharge. That is why we focus on creating comfort that
+                        feels good from the moment you lie down.
+                    </p>
+
+
+                    <!-- Stats -->
+                    <div class="better-sleep-stats">
+
+                        <div class="better-sleep-stat">
+
+                            <strong>
+                                10+
+                            </strong>
+
+                            <span>
+                                Years of
+                                Comfort
+                            </span>
+
+                        </div>
+
+
+                        <div class="better-sleep-stat">
+
+                            <strong>
+                                900+
+                            </strong>
+
+                            <span>
+                                Happy
+                                Sleepers
+                            </span>
+
+                        </div>
+
+
+                        <div class="better-sleep-stat">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Comfort
+                                Focused
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature -->
+                    <div class="better-sleep-feature">
+
+                        <div class="better-sleep-feature-icon">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Made For Your Way Of Resting
+                            </h3>
+
+                            <p>
+                                Explore comfort options designed around
+                                different sleeping styles, preferences and needs.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="about.html" class="better-sleep-link">
+
+                        Discover Comfort House
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Section 6 - Find Your Sleep Match
+========================================= -->
+
+    <section class="sleep-match-section">
+
+        <div class="container">
+
+            <div class="sleep-match-heading">
+
+                <span class="section-tag">
+                    FIND YOUR COMFORT MATCH
+                </span>
+
+                <h2>
+                    What Does Your
+                    <span>Perfect Sleep Feel Like?</span>
+                </h2>
+
+                <p>
+                    Whether you prefer a softer feel, balanced support or a
+                    firmer sleeping surface, discover comfort that matches
+                    the way you naturally sleep.
+                </p>
+
+            </div>
+
+
+            <div class="sleep-match-grid">
+
+
+                <!-- Match 01 -->
+                <a href="products.html" class="sleep-match-card">
+
+                    <div class="sleep-match-image">
+
+                        <img src="images/soft-comfort.jpg" alt="Soft comfortable bedding">
+
+                        <span class="sleep-match-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="sleep-match-content">
+
+                        <span class="sleep-match-label">
+                            FOR SOFT SLEEPERS
+                        </span>
+
+                        <h3>
+                            Soft &amp; Cloud-Like
+                        </h3>
+
+                        <p>
+                            Sink into gentle cushioning and enjoy a softer,
+                            cosier feeling at the end of the day.
+                        </p>
+
+                        <span class="sleep-match-link">
+                            Explore Soft Comfort
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- Match 02 -->
+                <a href="products.html" class="sleep-match-card">
+
+                    <div class="sleep-match-image">
+
+                        <img src="images/balanced-comfort.jpg" alt="Balanced mattress comfort">
+
+                        <span class="sleep-match-number">
+                            02
+                        </span>
+
+                        <span class="sleep-match-popular">
+                            MOST POPULAR
+                        </span>
+
+                    </div>
+
+                    <div class="sleep-match-content">
+
+                        <span class="sleep-match-label">
+                            FOR BALANCED SLEEPERS
+                        </span>
+
+                        <h3>
+                            Balance &amp; Support
+                        </h3>
+
+                        <p>
+                            A comfortable middle ground that combines
+                            cushioning with dependable support.
+                        </p>
+
+                        <span class="sleep-match-link">
+                            Explore Balanced Comfort
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- Match 03 -->
+                <a href="products.html" class="sleep-match-card">
+
+                    <div class="sleep-match-image">
+
+                        <img src="images/f-comfort.jpg" alt="Firm supportive mattress">
+
+                        <span class="sleep-match-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="sleep-match-content">
+
+                        <span class="sleep-match-label">
+                            FOR FIRM SLEEPERS
+                        </span>
+
+                        <h3>
+                            Firm &amp; Grounded
+                        </h3>
+
+                        <p>
+                            Enjoy a more stable sleeping surface with
+                            structured support throughout the night.
+                        </p>
+
+                        <span class="sleep-match-link">
+                            Explore Firm Comfort
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <div class="sleep-match-footer">
+
+                <span>
+                    Not sure what suits you?
+                </span>
+
+                <a href="sleep-guide.html">
+                    Read Our Sleep Guide
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     SECTION 7 - SLEEP STORIES
+========================= -->
+    <section class="sleep-stories-section">
+        <div class="container">
+
+            <div class="sleep-stories-header">
+                <div>
+                    <span class="sleep-stories-label">REAL SLEEP STORIES</span>
+
+                    <h2>
+                        Little Changes.<br>
+                        <em>Better Mornings.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Sometimes better sleep starts with something simple —
+                    the right mattress, the right pillow, and a space that
+                    finally feels like yours.
+                </p>
+            </div>
+
+
+            <div class="sleep-story-feature">
+
+                <!-- Main Story -->
+                <div class="sleep-story-main">
+
+                    <div class="sleep-story-image">
+                        <img src="images/person.jpg" alt="Comfort House customer relaxing in bedroom">
+                    </div>
+
+                    <div class="sleep-story-overlay">
+                        <span>01</span>
+
+                        <h3>
+                            “I stopped waking up
+                            tired.”
+                        </h3>
+
+                        <div class="sleep-story-person">
+                            <strong>Meera, Chennai</strong>
+                            <span>Comfort House Customer</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Side Stories -->
+                <div class="sleep-story-side">
+
+                    <div class="sleep-mini-story">
+                        <div class="sleep-mini-number">02</div>
+
+                        <div class="sleep-mini-content">
+                            <span>THE FIRST NIGHT</span>
+
+                            <h4>
+                                “It felt like my
+                                bedroom finally made sense.”
+                            </h4>
+
+                            <p>— Karthik, Coimbatore</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+
+                    <div class="sleep-mini-story">
+                        <div class="sleep-mini-number">03</div>
+
+                        <div class="sleep-mini-content">
+                            <span>A SMALL CHANGE</span>
+
+                            <h4>
+                                “The pillow made
+                                more difference than I expected.”
+                            </h4>
+
+                            <p>— Divya, Bangalore</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+
+                    <div class="sleep-mini-story">
+                        <div class="sleep-mini-number">04</div>
+
+                        <div class="sleep-mini-content">
+                            <span>GOOD MORNING</span>
+
+                            <h4>
+                                “For once, mornings
+                                don't feel rushed.”
+                            </h4>
+
+                            <p>— Arun, Madurai</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="sleep-stories-footer">
+                <span>EVERY SLEEPER HAS A STORY</span>
+
+                <a href="#">
+                    Explore Customer Stories
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================
+     SECTION 8 - FINAL CTA
+========================= -->
+    <section class="comfort-cta-section">
+
+        <div class="comfort-cta-overlay"></div>
+
+        <div class="comfort-cta-content">
+
+            <span class="comfort-cta-label">YOUR BEST SLEEP STARTS HERE</span>
+
+            <h2>
+                Make Room For
+                <em>Better Sleep.</em>
+            </h2>
+
+            <p>
+                Discover mattresses, pillows, and bedding designed
+                to make every night feel more comfortable.
+            </p>
+
+            <div class="comfort-cta-buttons">
+                <a href="#" class="comfort-cta-primary">
+                    Explore Our Collection
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#" class="comfort-cta-secondary">
+                    Visit Comfort House
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Footer
+========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-white.png" alt="Comfort House">
+                    </a>
+
+                    <p>
+                        Thoughtfully made mattresses and bedding designed
+                        to bring comfort, support, and better sleep into
+                        everyday life.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="home-1.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Sleep & Care -->
+                <div class="footer-column">
+
+                    <h3>Sleep &amp; Care</h3>
+
+                    <ul>
+                        <li>
+                            <a href="sleep-guide.html">Sleep Guide</a>
+                        </li>
+
+                        <li>
+                            <a href="pillows-bedding.html">
+                                Pillows &amp; Bedding
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="trial-returns.html">
+                                Trial &amp; Returns
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home-delivery.html">
+                                Home Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Our Store</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                24 Comfort Street,<br>
+                                Chennai, Tamil nadu.
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+919876543210">
+                                +91 98765 43210
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:hello@comforthouse.com">
+                                hello@comforthouse.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>
+                                Mon – Sat: 9:00 AM – 7:00 PM
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Comfort House. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="trial-returns.html">
+                        Trial &amp; Returns
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button type="button" class="scroll-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

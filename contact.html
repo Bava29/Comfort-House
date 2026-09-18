@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comfort House</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- =========================================
+     Header
+========================================= -->
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <!-- Logo -->
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.png" alt="Comfort House">
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <nav class="main-nav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+                        <li>
+                            <a href="index.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li class="has-dropdown">
+                            <a href="#" class="dropdown-toggle">
+                                Sleep &amp; Care
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="sleep-guide.html">Sleep Guide</a>
+                                </li>
+
+                                <li>
+                                    <a href="pillows-bedding.html">
+                                        Pillows &amp; Bedding
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="trial-returns.html">
+                                        Trial Period &amp; Returns
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-delivery.html">
+                                        Home Delivery
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="active">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- Desktop Actions -->
+                <div class="header-actions">
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                        title="Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode"
+                        title="RTL Mode">
+                        <i class="fa-solid fa-right-left"></i>
+                    </button>
+
+                    <!-- Login -->
+                    <a href="login.html" class="login-btn">
+                        <span>Login</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Menu Button -->
+                <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu">
+
+            <div class="mobile-menu-inner">
+
+                <nav class="mobile-nav" aria-label="Mobile Navigation">
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li class="mobile-dropdown">
+
+                            <button type="button" class="mobile-dropdown-toggle" aria-expanded="false">
+                                <span>Sleep &amp; Care</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+
+                            <ul class="mobile-dropdown-menu">
+
+                                <li>
+                                    <a href="sleep-guide.html">
+                                        Sleep Guide
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pillows-bedding.html">
+                                        Pillows &amp; Bedding
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="trial-returns.html">
+                                        Trial Period &amp; Returns
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-delivery.html">
+                                        Home Delivery
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- Mobile Actions -->
+                <div class="mobile-actions">
+
+                    <button type="button" class="mobile-action-btn theme-toggle">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                    </button>
+
+
+                    <button type="button" class="mobile-action-btn rtl-toggle">
+                        <span>
+                            <i class="fa-solid fa-right-left"></i>
+                            RTL Mode
+                        </span>
+                    </button>
+
+
+                    <a href="login.html" class="mobile-login-btn">
+
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+     INNER PAGE HERO
+========================= -->
+    <section class="inner-page-hero contact-banner">
+
+        <div class="inner-page-hero-overlay"></div>
+
+        <div class="inner-page-hero-content">
+            <h1>Contact Us</h1>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+     CONTACT INFO
+========================= -->
+    <section class="contact-info-section">
+
+        <div class="container">
+
+            <div class="contact-info-heading">
+                <span>WE'RE HERE TO HELP</span>
+
+                <h2>
+                    Let's Make Your
+                    <em>Space More Comfortable.</em>
+                </h2>
+            </div>
+
+
+            <div class="contact-info-grid">
+
+                <!-- Card 01 -->
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="contact-info-number">01</div>
+
+                    <div class="contact-info-content">
+                        <h3>Visit Our Store</h3>
+
+                        <p>
+                            24 Comfort Street,<br>
+                            Anna Nagar, Chennai
+                        </p>
+
+                        <a href="#">
+                            Get Directions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Card 02 -->
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="contact-info-number">02</div>
+
+                    <div class="contact-info-content">
+                        <h3>Call Us</h3>
+
+                        <p>
+                            Speak with our comfort
+                            specialists for assistance.
+                        </p>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Card 03 -->
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="contact-info-number">03</div>
+
+                    <div class="contact-info-content">
+                        <h3>Send An Email</h3>
+
+                        <p>
+                            Have a doubt? Drop a message
+                            and will get back to you.
+                        </p>
+
+                        <a href="mailto:hello@comforthouse.com">
+                            hello@comforthouse.com
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     CONTACT FORM
+========================= -->
+    <section class="contact-form-section">
+
+        <div class="container">
+
+            <div class="contact-form-intro">
+                <span>START A CONVERSATION</span>
+
+                <h2>
+                    Tell Us How We Can
+                    <em>Help You Sleep Better.</em>
+                </h2>
+
+                <p>
+                    Whether you need help choosing a mattress, finding the
+                    right pillow, or simply have a question, we're here for you.
+                </p>
+            </div>
+
+
+            <div class="contact-form-box">
+
+                <div class="contact-form-top">
+                    <div>
+                        <span>YOUR DETAILS</span>
+                        <h3>How Can We Help?</h3>
+                    </div>
+
+                    <div class="contact-form-mark">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+
+
+                <form class="comfort-contact-form">
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000">
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="How can we help?">
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-form-group contact-message-group">
+                        <label for="message">Your Message</label>
+
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="Tell us a little about what you need..." required></textarea>
+                    </div>
+
+
+                    <div class="contact-form-bottom">
+
+                        <p>
+                            We usually respond within one business day.
+                        </p>
+
+                        <button type="submit" class="contact-submit-btn">
+                            Send Message
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     CONTACT MAP
+========================= -->
+    <section class="contact-map-section">
+
+        <div class="contact-map-wrapper">
+
+            <!-- Location Content -->
+            <div class="contact-map-content">
+
+                <span class="contact-map-label">FIND US</span>
+
+                <h2>
+                    Come Find Your
+                    <em>Comfort.</em>
+                </h2>
+
+                <p>
+                    Step into our store, explore our collection,
+                    and experience the difference of finding comfort
+                    in person.
+                </p>
+
+                <div class="contact-location-details">
+
+                    <div class="contact-location-item">
+                        <div class="contact-location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <span>OUR STORE</span>
+                            <strong>
+                                24 Comfort Street,<br>
+                                Anna Nagar, Chennai
+                            </strong>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-location-item">
+                        <div class="contact-location-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <span>STORE HOURS</span>
+                            <strong>
+                                Monday – Saturday<br>
+                                10:00 AM – 8:00 PM
+                            </strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" class="contact-map-button">
+                    Get Directions
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Map -->
+            <div class="contact-map-frame">
+
+                <iframe src="https://www.google.com/maps?q=Anna%20Nagar%20Chennai&output=embed" loading="lazy"
+                    allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     Footer
+========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-white.png" alt="Comfort House">
+                    </a>
+
+                    <p>
+                        Thoughtfully made mattresses and bedding designed
+                        to bring comfort, support, and better sleep into
+                        everyday life.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="home-1.html">Home 1</a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Sleep & Care -->
+                <div class="footer-column">
+
+                    <h3>Sleep &amp; Care</h3>
+
+                    <ul>
+                        <li>
+                            <a href="sleep-guide.html">Sleep Guide</a>
+                        </li>
+
+                        <li>
+                            <a href="pillows-bedding.html">
+                                Pillows &amp; Bedding
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="trial-returns.html">
+                                Trial &amp; Returns
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home-delivery.html">
+                                Home Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Our Store</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                24 Comfort Street,<br>
+                                Chennai, Tamil nadu.
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+919876543210">
+                                +91 98765 43210
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:hello@comforthouse.com">
+                                hello@comforthouse.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>
+                                Mon – Sat: 9:00 AM – 7:00 PM
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Comfort House. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="trial-returns.html">
+                        Trial &amp; Returns
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button type="button" class="scroll-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
