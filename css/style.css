@@ -25397,3 +25397,83 @@ html[dir="rtl"] .auth-page-controls .auth-control-btn i {
     }
 
 }
+
+/* =========================================
+   MOBILE LOGIN BUTTON — DARK MODE FIX
+========================================= */
+
+@media (max-width: 991px) {
+
+    html.dark-mode .mobile-login-btn {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        min-height: 48px !important;
+
+        background-color: #F1E9E1 !important;
+        color: #211C18 !important;
+
+        font-family: var(--body-font) !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+
+        text-decoration: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        border: 0 !important;
+        border-radius: 5px !important;
+    }
+
+    html.dark-mode .mobile-login-btn:link,
+    html.dark-mode .mobile-login-btn:visited,
+    html.dark-mode .mobile-login-btn:hover,
+    html.dark-mode .mobile-login-btn:active {
+        color: #211C18 !important;
+        background-color: #F1E9E1 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+}
+
+/* =========================================
+   RTL MOBILE HERO — RIGHT SPACE FIX
+========================================= */
+
+@media (max-width: 1199px) {
+
+    html[dir="rtl"] .home-hero .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    html[dir="rtl"] .home-hero-content {
+        left: auto !important;
+        right: 0 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
+        text-align: right !important;
+
+        transform: translateY(-50%) !important;
+    }
+
+    html[dir="rtl"] .home-hero-content h1,
+    html[dir="rtl"] .home-hero-content p,
+    html[dir="rtl"] .hero-eyebrow {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .hero-btn {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+}
