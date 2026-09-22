@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Orthopaedic Mattress",
             image: "images/firmcore-orthopaedic-mattress.jpg",
             price: 31999,
-            description: "Firm and dependable support for sleepers who prefer a grounded feel.",
+            description: "Firm and dependable support for sleepers who prefer a nice feel.",
             size: "King Size",
             sizeValue: "king",
             material: "spring",
