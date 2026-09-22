@@ -4616,7 +4616,7 @@ html[dir="rtl"] .mobile-nav {
 
 .sleep-promise-content h3 {
     margin: 0 0 8px;
-    font-family: var(--heading-font);
+    font-family: var(--body-font);
     font-size: 22px;
     font-weight: 600;
     color: var(--primary-color);
@@ -25165,10 +25165,485 @@ html[dir="rtl"] .hero-btn:hover i {
     transform: rotate(180deg) translateX(4px) !important;
 }
 
+/* =========================================================
+   SPACING REFINEMENT
+   Keeps editorial breathing room while removing oversized
+   non-hero whitespace across the site.
+========================================================= */
+
+/* Main content sections previously ranged from 100px to 120px vertically. */
+.section,
+.comfort-section,
+.why-comfort-section,
+.sleep-journey-section,
+.sleep-space-section,
+.sleep-match-section,
+.sleep-stories-section,
+.home-two-values-section,
+.sleep-promise-section,
+.personal-sleep-section,
+.comfort-benefits-section,
+.about-story-section,
+.about-beliefs-section,
+.about-comfort-section,
+.about-numbers-section,
+.about-process-section,
+.about-team-section,
+.advanced-products-section,
+.products-filter-section,
+.sleep-essentials-section,
+.sleep-lab-section,
+.sleep-position-section,
+.sleep-firmness-section,
+.trial-process-section,
+.delivery-journey-section,
+.delivery-simple-section,
+.delivery-support-section,
+.home-delivery-final-section,
+.contact-info-section,
+.contact-form-section,
+.comfort-accessories-section,
+.personal-comfort-showcase,
+.about-gallery-section {
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+/* Bring the values cards closer to the header/preceding content. */
+.home-two-values-section {
+    padding-top: 56px;
+}
+
+/* Keep section introductions connected to the content that follows. */
+.section-heading,
+.sleep-journey-intro,
+.sleep-match-heading,
+.about-numbers-heading,
+.about-team-heading,
+.sleep-lab-heading,
+.sleep-position-heading,
+.sleep-firmness-heading,
+.trial-process-heading,
+.delivery-journey-heading,
+.contact-info-heading,
+.contact-form-intro {
+    margin-bottom: 42px;
+}
+
+.products-section-header {
+    margin-bottom: 42px;
+}
+
+/* Editorial two-column layouts no longer create oversized central gutters. */
+.comfort-wrapper,
+.why-comfort-header,
+.sleep-journey-main,
+.sleep-space-wrapper,
+.about-story-wrapper,
+.about-comfort-wrapper,
+.sleep-essentials-layout,
+.delivery-simple-wrapper,
+.delivery-support-wrapper,
+.personal-comfort-wrap,
+.about-gallery-heading-main {
+    gap: 52px;
+}
+
+/* Tall media panels were the largest source of perceived empty space. */
+.comfort-image,
+.sleep-journey-image,
+.sleep-space-image,
+.about-story-image,
+.about-comfort-image,
+.sleep-essentials-image,
+.delivery-simple-visual,
+.delivery-simple-visual img,
+.personal-comfort-visual,
+.personal-comfort-image {
+    min-height: 0;
+    height: 500px;
+}
+
+/* Trim only the cards with intentionally oversized fixed heights. */
+.why-comfort-card,
+.home-two-value-card,
+.contact-info-card {
+    min-height: 280px;
+}
+
+@media (max-width: 991px) {
+
+    .section,
+    .comfort-section,
+    .why-comfort-section,
+    .sleep-journey-section,
+    .sleep-space-section,
+    .sleep-match-section,
+    .sleep-stories-section,
+    .home-two-values-section,
+    .sleep-promise-section,
+    .personal-sleep-section,
+    .comfort-benefits-section,
+    .about-story-section,
+    .about-beliefs-section,
+    .about-comfort-section,
+    .about-numbers-section,
+    .about-process-section,
+    .about-team-section,
+    .advanced-products-section,
+    .products-filter-section,
+    .sleep-essentials-section,
+    .sleep-lab-section,
+    .sleep-position-section,
+    .sleep-firmness-section,
+    .trial-process-section,
+    .delivery-journey-section,
+    .delivery-simple-section,
+    .delivery-support-section,
+    .home-delivery-final-section,
+    .contact-info-section,
+    .contact-form-section,
+    .comfort-accessories-section,
+    .personal-comfort-showcase,
+    .about-gallery-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .comfort-wrapper,
+    .why-comfort-header,
+    .sleep-journey-main,
+    .sleep-space-wrapper,
+    .about-story-wrapper,
+    .about-comfort-wrapper,
+    .sleep-essentials-layout,
+    .delivery-simple-wrapper,
+    .delivery-support-wrapper,
+    .personal-comfort-wrap,
+    .about-gallery-heading-main {
+        gap: 40px;
+    }
+
+    .comfort-image,
+    .sleep-journey-image,
+    .sleep-space-image,
+    .about-story-image,
+    .about-comfort-image,
+    .sleep-essentials-image,
+    .delivery-simple-visual,
+    .delivery-simple-visual img,
+    .personal-comfort-visual,
+    .personal-comfort-image {
+        height: 430px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .section,
+    .comfort-section,
+    .why-comfort-section,
+    .sleep-journey-section,
+    .sleep-space-section,
+    .sleep-match-section,
+    .sleep-stories-section,
+    .home-two-values-section,
+    .sleep-promise-section,
+    .personal-sleep-section,
+    .comfort-benefits-section,
+    .about-story-section,
+    .about-beliefs-section,
+    .about-comfort-section,
+    .about-numbers-section,
+    .about-process-section,
+    .about-team-section,
+    .advanced-products-section,
+    .products-filter-section,
+    .sleep-essentials-section,
+    .sleep-lab-section,
+    .sleep-position-section,
+    .sleep-firmness-section,
+    .trial-process-section,
+    .delivery-journey-section,
+    .delivery-simple-section,
+    .delivery-support-section,
+    .home-delivery-final-section,
+    .contact-info-section,
+    .contact-form-section,
+    .comfort-accessories-section,
+    .personal-comfort-showcase,
+    .about-gallery-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .section-heading,
+    .sleep-journey-intro,
+    .sleep-match-heading,
+    .about-numbers-heading,
+    .about-team-heading,
+    .sleep-lab-heading,
+    .sleep-position-heading,
+    .sleep-firmness-heading,
+    .trial-process-heading,
+    .delivery-journey-heading,
+    .contact-info-heading,
+    .contact-form-intro {
+        margin-bottom: 32px;
+    }
+
+    .products-section-header {
+        margin-bottom: 32px;
+    }
+
+    .comfort-wrapper,
+    .why-comfort-header,
+    .sleep-journey-main,
+    .sleep-space-wrapper,
+    .about-story-wrapper,
+    .about-comfort-wrapper,
+    .sleep-essentials-layout,
+    .delivery-simple-wrapper,
+    .delivery-support-wrapper,
+    .personal-comfort-wrap,
+    .about-gallery-heading-main {
+        gap: 30px;
+    }
+
+    .comfort-image,
+    .sleep-journey-image,
+    .sleep-space-image,
+    .about-story-image,
+    .about-comfort-image,
+    .sleep-essentials-image,
+    .delivery-simple-visual,
+    .delivery-simple-visual img,
+    .personal-comfort-visual,
+    .personal-comfort-image {
+        height: 350px;
+    }
+
+    .why-comfort-card,
+    .home-two-value-card,
+    .contact-info-card {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .comfort-image,
+    .sleep-journey-image,
+    .sleep-space-image,
+    .about-story-image,
+    .about-comfort-image,
+    .sleep-essentials-image,
+    .delivery-simple-visual,
+    .delivery-simple-visual img,
+    .personal-comfort-visual,
+    .personal-comfort-image {
+        height: 310px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .section,
+    .comfort-section,
+    .why-comfort-section,
+    .sleep-journey-section,
+    .sleep-space-section,
+    .sleep-match-section,
+    .sleep-stories-section,
+    .home-two-values-section,
+    .sleep-promise-section,
+    .personal-sleep-section,
+    .comfort-benefits-section,
+    .about-story-section,
+    .about-beliefs-section,
+    .about-comfort-section,
+    .about-numbers-section,
+    .about-process-section,
+    .about-team-section,
+    .advanced-products-section,
+    .products-filter-section,
+    .sleep-essentials-section,
+    .sleep-lab-section,
+    .sleep-position-section,
+    .sleep-firmness-section,
+    .trial-process-section,
+    .delivery-journey-section,
+    .delivery-simple-section,
+    .delivery-support-section,
+    .home-delivery-final-section,
+    .contact-info-section,
+    .contact-form-section,
+    .comfort-accessories-section,
+    .personal-comfort-showcase,
+    .about-gallery-section {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .comfort-image,
+    .sleep-journey-image,
+    .sleep-space-image,
+    .about-story-image,
+    .about-comfort-image,
+    .sleep-essentials-image,
+    .delivery-simple-visual,
+    .delivery-simple-visual img,
+    .personal-comfort-visual,
+    .personal-comfort-image {
+        height: 280px;
+    }
+}
+
+/* =========================================================
+   CONTENT TYPOGRAPHY CONSISTENCY
+   A single readable description style for all non-hero content.
+========================================================= */
+:root {
+    --description-font-size: 16px;
+    --description-line-height: 1.7;
+}
+
+section:not(.home-hero):not(.home-two-hero) p,
+.auth-page p {
+    font-family: var(--body-font) !important;
+    font-size: var(--description-font-size) !important;
+    font-weight: 400 !important;
+    line-height: var(--description-line-height) !important;
+}
+
+@media (max-width: 767px) {
+    :root {
+        --description-font-size: 15px;
+    }
+}
+
+/* =========================================================
+   BUTTON TYPOGRAPHY CONSISTENCY
+   Applies one size and weight to native and link-based buttons.
+========================================================= */
+:root {
+    --button-font-size: 14px;
+    --button-font-weight: 600;
+}
+
+button,
+.btn,
+a[class*="-btn"],
+a[class*="-button"],
+a[class*="-primary"],
+a[class*="-secondary"] {
+    font-family: var(--body-font) !important;
+    font-size: var(--button-font-size) !important;
+    font-weight: var(--button-font-weight) !important;
+    line-height: 1.4 !important;
+}
+
+/* Keep the login control aligned with the two theme-direction controls. */
+.header-actions .login-btn,
+html.dark-mode .header-actions .login-btn,
+html[dir="rtl"] .header-actions .login-btn {
+    height: 40px;
+    min-height: 40px;
+}
+
+@media (max-width: 991px) {
+
+    .mobile-login-btn,
+    html.dark-mode .mobile-login-btn,
+    html[dir="rtl"] .mobile-login-btn {
+        height: 48px;
+        min-height: 48px;
+    }
+}
+
 
 /* =========================================================
    HOME 1 HERO — RTL OVERLAY
 ========================================================= */
+
+/* =========================================================
+   HOME 1 — WHY COMFORT HOUSE CARDS
+   Separate the four benefits into the rounded-card treatment.
+========================================================= */
+.why-comfort-grid {
+    gap: 16px;
+    border: 0;
+}
+
+.why-comfort-card,
+.why-comfort-card:first-child,
+.why-comfort-card:last-child {
+    min-height: 300px;
+    padding: 32px 28px 35px;
+    background-color: rgba(255, 255, 255, 0.44);
+    border: 1px solid rgba(59, 48, 42, 0.14);
+    border-radius: 16px;
+}
+
+.why-comfort-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(59, 48, 42, 0.09);
+}
+
+html.dark-mode .why-comfort-card,
+html.dark-mode .why-comfort-card:first-child,
+html.dark-mode .why-comfort-card:last-child {
+    background-color: #211C18;
+    border-color: rgba(241, 233, 225, 0.12);
+}
+
+@media (max-width: 991px) {
+    .why-comfort-grid {
+        gap: 14px;
+    }
+
+    .why-comfort-card,
+    .why-comfort-card:first-child,
+    .why-comfort-card:last-child,
+    .why-comfort-card:nth-child(odd),
+    .why-comfort-card:nth-child(3),
+    .why-comfort-card:nth-child(4) {
+        min-height: 270px;
+        padding: 30px 25px;
+        border: 1px solid rgba(59, 48, 42, 0.14);
+        border-radius: 14px;
+    }
+
+    html.dark-mode .why-comfort-card,
+    html.dark-mode .why-comfort-card:first-child,
+    html.dark-mode .why-comfort-card:last-child,
+    html.dark-mode .why-comfort-card:nth-child(odd),
+    html.dark-mode .why-comfort-card:nth-child(3),
+    html.dark-mode .why-comfort-card:nth-child(4) {
+        border-color: rgba(241, 233, 225, 0.12);
+    }
+}
+
+@media (max-width: 767px) {
+    .why-comfort-grid {
+        gap: 12px;
+    }
+
+    .why-comfort-card,
+    .why-comfort-card:first-child,
+    .why-comfort-card:last-child {
+        min-height: 0;
+        padding: 26px 22px;
+        border: 1px solid rgba(59, 48, 42, 0.14);
+        border-radius: 12px;
+    }
+
+    html.dark-mode .why-comfort-card,
+    html.dark-mode .why-comfort-card:first-child,
+    html.dark-mode .why-comfort-card:last-child {
+        border-color: rgba(241, 233, 225, 0.12);
+    }
+}
 
 html[dir="rtl"] .home-hero-overlay {
     background: linear-gradient(270deg,
@@ -25474,6 +25949,402 @@ html[dir="rtl"] .auth-page-controls .auth-control-btn i {
     html[dir="rtl"] .hero-btn {
         margin-right: 0 !important;
         margin-left: 0 !important;
+    }
+
+}
+
+/* Final header-control sizing: dark mode, RTL and login stay identical. */
+.header-actions .header-icon-btn,
+.header-actions .login-btn {
+    height: 42px !important;
+    min-height: 42px !important;
+}
+
+.header-actions .header-icon-btn {
+    width: 42px !important;
+}
+
+@media (max-width: 991px) {
+
+    .mobile-actions .mobile-action-btn,
+    .mobile-actions .mobile-login-btn {
+        height: 48px !important;
+        min-height: 48px !important;
+    }
+}
+
+/* =========================================
+   HOME 2 — SECTION 2
+   REDUCE EXCESSIVE TOP SPACE
+========================================= */
+
+.home-two-value-card .home-two-value-content {
+    margin-top: 45px !important;
+}
+
+.home-two-value-card .home-two-value-top {
+    margin-bottom: 0 !important;
+}
+
+/* ==========================================
+   STRONG OVERRIDE - REMOVE SIDE EMPTY SPACE
+   ABOUT PROCESS / HOW WE HELP
+========================================== */
+
+.about-process-section>.container {
+    width: 100% !important;
+    max-width: 1400px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.about-process-steps {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.about-process-step {
+    width: 100% !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+.about-process-step:first-child {
+    padding-left: 10px !important;
+}
+
+.about-process-step:last-child {
+    padding-right: 10px !important;
+}
+
+/* =========================================================
+   HOME 1 HERO — RTL + DARK MODE STRONG VISIBILITY FIX
+========================================================= */
+
+/* Dark overlay for RTL + Dark Mode */
+html.dark-mode[dir="rtl"] .home-hero-overlay {
+    background: rgba(18, 14, 12, 0.68) !important;
+    opacity: 1 !important;
+}
+
+/* Hero eyebrow */
+html.dark-mode[dir="rtl"] .home-hero-content .hero-eyebrow {
+    color: #E8DED2 !important;
+    opacity: 1 !important;
+}
+
+/* Main heading */
+html.dark-mode[dir="rtl"] .home-hero-content h1,
+html.dark-mode[dir="rtl"] .home-hero-content h1 span {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Paragraph */
+html.dark-mode[dir="rtl"] .home-hero-content p {
+    color: #F8F1EA !important;
+    opacity: 1 !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Button */
+html.dark-mode[dir="rtl"] .home-hero-content .hero-btn {
+    background-color: #F1E9E1 !important;
+    color: #211C18 !important;
+    opacity: 1 !important;
+}
+
+html.dark-mode[dir="rtl"] .home-hero-content .hero-btn i {
+    color: #211C18 !important;
+}
+
+/* Keep RTL alignment */
+html.dark-mode[dir="rtl"] .home-hero-content {
+    text-align: right !important;
+}
+
+html.dark-mode[dir="rtl"] .hero-eyebrow,
+html.dark-mode[dir="rtl"] .home-hero-content h1,
+html.dark-mode[dir="rtl"] .home-hero-content p {
+    text-align: right !important;
+}
+
+/* =========================================================
+   HOME 2 — WHY COMFORT HOUSE
+   iPAD MINI — STRONG CENTER ALIGN OVERRIDE
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .home-two-values-intro {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+        padding-bottom: 50px !important;
+
+        text-align: center !important;
+    }
+
+    /* Label */
+    .home-two-values-label {
+        width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 0 22px !important;
+        text-align: center !important;
+    }
+
+    .home-two-values-label span {
+        text-align: center !important;
+    }
+
+    /* Main Heading */
+    .home-two-values-intro h2 {
+        width: 100% !important;
+        max-width: 680px !important;
+
+        margin: 0 auto 20px !important;
+
+        text-align: center !important;
+
+        font-size: 46px !important;
+        line-height: 1.08 !important;
+    }
+
+    .home-two-values-intro h2 em {
+        display: block !important;
+        text-align: center !important;
+    }
+
+    /* Description */
+    .home-two-values-intro p {
+        width: 100% !important;
+        max-width: 620px !important;
+
+        margin: 0 auto !important;
+
+        text-align: center !important;
+
+        font-size: 14px !important;
+        line-height: 1.75 !important;
+    }
+
+}
+
+/* =========================================================
+   PRODUCTS — iPAD MINI
+   PRICE + BUTTON STACKED
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .advanced-product-card .product-card-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+
+        gap: 10px !important;
+        padding-top: 15px !important;
+    }
+
+    .advanced-product-card .product-price {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .advanced-product-card .product-view-btn {
+        width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        white-space: nowrap !important;
+        padding: 11px 12px !important;
+
+        font-size: 9px !important;
+    }
+
+    .advanced-product-card .product-view-btn i {
+        flex-shrink: 0 !important;
+    }
+}
+
+/* =========================================================
+   SLEEP LAB — iPAD MINI STRONG RESPONSIVE FIX
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Main workspace */
+    .sleep-lab-workspace {
+        display: grid !important;
+        grid-template-columns: 0.32fr 0.68fr !important;
+        gap: 18px !important;
+        align-items: stretch !important;
+        width: 100% !important;
+    }
+
+    /* Left navigation */
+    .sleep-lab-navigation {
+        width: 100% !important;
+        padding: 22px 18px !important;
+        min-width: 0 !important;
+    }
+
+    .sleep-lab-option {
+        width: 100% !important;
+        min-height: 70px !important;
+
+        display: grid !important;
+        grid-template-columns: 28px minmax(0, 1fr) 18px !important;
+        gap: 8px !important;
+
+        padding: 14px 0 !important;
+    }
+
+    .sleep-lab-option-content {
+        min-width: 0 !important;
+    }
+
+    .sleep-lab-option-content strong {
+        display: block !important;
+        font-size: 15px !important;
+        line-height: 1.3 !important;
+        white-space: nowrap !important;
+    }
+
+    .sleep-lab-option-content small {
+        display: block !important;
+        font-size: 9px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Right display */
+    .sleep-lab-display {
+        width: 100% !important;
+        min-width: 0 !important;
+        background-color: var(--white) !important;
+    }
+
+    /* Image */
+    .sleep-lab-image {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .sleep-lab-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* White content below image */
+    .sleep-lab-info {
+        display: grid !important;
+        grid-template-columns: 0.9fr 1.1fr !important;
+
+        gap: 0 !important;
+
+        width: 100% !important;
+
+        padding: 28px 24px 30px !important;
+    }
+
+    /* Left title */
+    .sleep-lab-info-top {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        padding-right: 22px !important;
+    }
+
+    .sleep-lab-info-top>span {
+        display: block !important;
+        margin-bottom: 10px !important;
+        font-size: 8px !important;
+    }
+
+    .sleep-lab-info-top h3 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 25px !important;
+        line-height: 1.18 !important;
+    }
+
+    /* Right description */
+    .sleep-lab-info-bottom {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        padding-left: 22px !important;
+        padding-top: 0 !important;
+
+        border-left: 1px solid rgba(59, 48, 42, 0.12) !important;
+        border-top: 0 !important;
+    }
+
+    .sleep-lab-info-bottom p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-bottom: 20px !important;
+
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+    }
+
+    /* Recommendation */
+    .sleep-lab-recommendation {
+        width: 100% !important;
+
+        padding-top: 14px !important;
+
+        border-top: 1px solid rgba(59, 48, 42, 0.10) !important;
+    }
+
+    .sleep-lab-recommendation strong {
+        display: block !important;
+        max-width: 100% !important;
+
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Bottom link */
+    .sleep-lab-bottom {
+        width: 100% !important;
+
+        margin-top: 20px !important;
+        padding-top: 18px !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        gap: 20px !important;
     }
 
 }
