@@ -8489,577 +8489,1559 @@ html[dir="rtl"] .mobile-nav {
 
 /******************************Trial period & returns page****************************************/
 
-.trial-process-section {
-    padding: 105px 0;
-    background-color: var(--white);
+/* =========================================
+   TRIAL BOOKING SECTION
+   HOW TO BOOK YOUR TRIAL
+========================================= */
+
+.trial-booking-section {
+    padding: 100px 0;
+    background-color: #F7F3EE;
 }
 
-.trial-process-heading {
-    max-width: 700px;
-    margin: 0 auto 65px;
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.trial-booking-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
     text-align: center;
 }
 
-.trial-process-label {
-    display: block;
-    margin-bottom: 17px;
+.trial-booking-label {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
     font-family: var(--body-font);
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.17em;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+
     color: var(--primary-color);
 }
 
-.trial-process-heading h2 {
-    margin: 0 0 20px;
+.trial-booking-heading h2 {
+    margin-bottom: 18px;
+
     font-family: var(--heading-font);
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 600;
-    line-height: 1.18;
+    line-height: 1.15;
+
     color: var(--primary-color);
 }
 
-.trial-process-heading h2 em {
-    font-style: italic;
+.trial-booking-heading h2 em {
+    display: block;
+
+    font-family: var(--heading-font);
     font-weight: 600;
+    font-style: italic;
 }
 
-.trial-process-heading p {
-    max-width: 600px;
+.trial-booking-heading p {
+    max-width: 620px;
     margin: 0 auto;
+
     font-family: var(--body-font);
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.75;
+
     color: var(--primary-color);
+    opacity: 0.72;
 }
 
-.trial-process-steps {
+
+/* =========================================
+   BOOKING STEPS
+========================================= */
+
+.trial-booking-steps {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-    border-top: 1px solid rgba(59, 48, 42, 0.15);
-    border-bottom: 1px solid rgba(59, 48, 42, 0.15);
+    gap: 20px;
 }
 
-.trial-process-step {
+
+/* =========================================
+   BOOKING CARD
+========================================= */
+
+.trial-booking-card {
     position: relative;
-    padding: 35px 28px 38px;
-    border-right: 1px solid rgba(59, 48, 42, 0.15);
+
+    min-height: 285px;
+
+    padding: 28px 25px;
+
+    background-color: var(--white);
+
+    border: 1px solid rgba(59, 48, 42, 0.08);
+    border-radius: 8px;
+
+    box-shadow: 0 10px 30px rgba(59, 48, 42, 0.06);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
 }
 
-.trial-process-step:first-child {
-    padding-left: 5px;
+.trial-booking-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 38px rgba(59, 48, 42, 0.11);
 }
 
-.trial-process-step:last-child {
-    padding-right: 5px;
-    border-right: none;
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.trial-booking-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
 }
 
-.trial-process-number {
-    display: block;
-    margin-bottom: 25px;
-    font-family: var(--body-font);
-    font-size: 11px;
+.trial-booking-card-top>span {
+    font-family: var(--heading-font);
+    font-size: 18px;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    color: rgba(59, 48, 42, 0.5);
+
+    color: var(--primary-color);
+    opacity: 0.45;
 }
 
-.trial-process-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 22px;
+
+/* =========================================
+   ICON
+========================================= */
+
+.trial-booking-icon {
+    width: 52px;
+    height: 52px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+
+    color: var(--primary-color);
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+
+    border-radius: 50%;
 }
 
-.trial-process-icon i {
-    font-size: 16px;
+.trial-booking-icon i {
+    font-size: 17px;
 }
 
-.trial-process-step h3 {
-    margin: 0 0 10px;
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.trial-booking-card h3 {
+    margin-bottom: 12px;
+
     font-family: var(--heading-font);
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 600;
+    line-height: 1.25;
+
     color: var(--primary-color);
 }
 
-.trial-process-step p {
+.trial-booking-card p {
     margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: var(--primary-color);
+    opacity: 0.70;
+}
+
+
+/* =========================================
+   BOOKING CTA
+========================================= */
+
+.trial-booking-action {
+    margin-top: 35px;
+    padding: 25px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background-color: var(--primary-color);
+
+    border-radius: 8px;
+}
+
+.trial-booking-action-content h3 {
+    margin-bottom: 6px;
+
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    color: var(--white);
+}
+
+.trial-booking-action-content p {
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    color: var(--white);
+    opacity: 0.72;
+}
+
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.trial-booking-btn {
+    min-height: 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+
+    padding: 0 24px;
+
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+    border-radius: 5px;
+
+    transition: var(--transition);
+}
+
+.trial-booking-btn:hover {
+    color: var(--white);
+    background-color: #6A5A4E;
+}
+
+.trial-booking-btn i {
+    font-size: 12px;
+
+    transition: transform var(--transition);
+}
+
+.trial-booking-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* =========================================
+   SECTION 3
+   TRIAL EXPERIENCE
+========================================= */
+
+.trial-experience-section {
+    padding: 110px 0;
+    background-color: var(--white);
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.trial-experience-layout {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 85px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.trial-experience-content {
+    max-width: 560px;
+}
+
+.trial-experience-label {
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    font-family: var(--body-font);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+
+    color: var(--primary-color);
+}
+
+.trial-experience-content h2 {
+    max-width: 500px;
+
+    margin-bottom: 20px;
+
+    font-family: var(--heading-font);
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.15;
+
+    color: var(--primary-color);
+}
+
+.trial-experience-content h2 em {
+    display: block;
+
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.trial-experience-content>p {
+    max-width: 520px;
+
+    margin-bottom: 35px;
+
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    color: var(--primary-color);
+    opacity: 0.72;
+}
+
+
+/* =========================================
+   EXPERIENCE POINTS
+========================================= */
+
+.trial-experience-points {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid rgba(59, 48, 42, 0.12);
+}
+
+
+/* =========================================
+   SINGLE POINT
+========================================= */
+
+.trial-experience-point {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 17px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid rgba(59, 48, 42, 0.12);
+}
+
+
+/* =========================================
+   POINT ICON
+========================================= */
+
+.trial-experience-point-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+    border-radius: 50%;
+}
+
+.trial-experience-point-icon i {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   POINT CONTENT
+========================================= */
+
+.trial-experience-point h3 {
+    margin-bottom: 5px;
+
+    font-family: var(--heading-font);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    color: var(--primary-color);
+}
+
+.trial-experience-point p {
+    max-width: 430px;
+
+    margin: 0;
+
     font-family: var(--body-font);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.65;
+
+    color: var(--primary-color);
+    opacity: 0.68;
+}
+
+
+/* =========================================
+   VISUAL
+========================================= */
+
+.trial-experience-visual {
+    position: relative;
+
+    min-height: 570px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.trial-experience-image {
+    width: 100%;
+    height: 570px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.trial-experience-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.trial-experience-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================
+   IMAGE BADGE
+========================================= */
+
+.trial-experience-badge {
+    position: absolute;
+
+    left: -35px;
+    bottom: 35px;
+
+    min-width: 190px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 18px 22px;
+
+    background-color: var(--white);
+
+    border-radius: 7px;
+
+    box-shadow: 0 15px 35px rgba(59, 48, 42, 0.13);
+}
+
+.trial-experience-badge span {
+    margin-bottom: 4px;
+
+    font-family: var(--body-font);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+
+    color: var(--primary-color);
+
+    opacity: 0.60;
+}
+
+.trial-experience-badge strong {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+
     color: var(--primary-color);
 }
 
-/* ================================
-   TRIAL RETURN INFO SECTION
-================================ */
+/* =========================================
+   SECTION 4
+   TRIAL & RETURN GUIDELINES
+========================================= */
 
-.return-info-section {
-    padding: 110px 0;
-    background-color: var(--secondary-color);
+.trial-guidelines-section {
+    padding: 105px 0;
+    background-color: #F7F3EE;
 }
 
-.return-info-heading {
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.trial-guidelines-heading {
     max-width: 720px;
-    margin: 0 auto 65px;
+    margin: 0 auto 55px;
     text-align: center;
 }
 
-.return-info-heading>span {
-    display: block;
-    margin-bottom: 14px;
+.trial-guidelines-label {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
     font-family: var(--body-font);
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.18em;
+    line-height: 1.5;
+
     color: var(--primary-color);
 }
 
-.return-info-heading h2 {
-    margin: 0 0 18px;
-    font-size: 46px;
+.trial-guidelines-heading h2 {
+    margin-bottom: 18px;
+
+    font-family: var(--heading-font);
+    font-size: 42px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.15;
+
     color: var(--primary-color);
 }
 
-.return-info-heading p {
-    max-width: 650px;
+.trial-guidelines-heading h2 em {
+    display: block;
+
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.trial-guidelines-heading p {
+    max-width: 620px;
     margin: 0 auto;
+
+    font-family: var(--body-font);
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.75;
+
     color: var(--primary-color);
+    opacity: 0.72;
 }
 
 
-/* Main Layout */
+/* =========================================
+   GUIDELINES LAYOUT
+========================================= */
 
-.return-info-layout {
+.trial-guidelines-layout {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 70px;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 60px;
+    align-items: stretch;
+}
+
+/* =========================================
+   FEATURE CARD WITH BACKGROUND IMAGE
+========================================= */
+
+.trial-guidelines-feature {
+    position: relative;
+
+    min-height: 510px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 42px;
+
+    background-image: url("../images/trial-guidelines.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+/* Dark Overlay */
+
+.trial-guidelines-feature::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(180deg,
+            rgba(45, 37, 32, 0.25) 0%,
+            rgba(45, 37, 32, 0.55) 45%,
+            rgba(45, 37, 32, 0.92) 100%);
+
+    z-index: 0;
+}
+
+
+/* Keep Content Above Overlay */
+
+.trial-guidelines-feature>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Icon */
+
+.trial-guidelines-feature-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: auto;
+
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+    border-radius: 50%;
+}
+
+.trial-guidelines-feature-icon i {
+    font-size: 18px;
+}
+
+
+/* Label */
+
+.trial-guidelines-feature>span {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-family: var(--body-font);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+
+    color: var(--secondary-color);
+}
+
+
+/* Heading */
+
+.trial-guidelines-feature h3 {
+    max-width: 350px;
+
+    margin-bottom: 18px;
+
+    font-family: var(--heading-font);
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.15;
+
+    color: var(--white);
+}
+
+
+/* Description */
+
+.trial-guidelines-feature p {
+    max-width: 400px;
+
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+
+    color: var(--white);
+    opacity: 0.78;
+}
+
+/* =========================================
+   GUIDELINES LIST
+========================================= */
+
+.trial-guidelines-list {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid rgba(59, 48, 42, 0.15);
+}
+
+
+/* =========================================
+   SINGLE GUIDELINE
+========================================= */
+
+.trial-guidelines-item {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    padding: 27px 5px;
+
+    border-bottom: 1px solid rgba(59, 48, 42, 0.15);
+
+    transition: var(--transition);
+}
+
+.trial-guidelines-item:hover {
+    padding-left: 15px;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.trial-guidelines-item-number {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+    border-radius: 50%;
+
+    font-family: var(--heading-font);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ITEM CONTENT
+========================================= */
+
+.trial-guidelines-item-content h3 {
+    margin-bottom: 7px;
+
+    font-family: var(--heading-font);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    color: var(--primary-color);
+}
+
+.trial-guidelines-item-content p {
+    max-width: 580px;
+
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: var(--primary-color);
+    opacity: 0.68;
+}
+
+/* =========================================
+   SECTION 5
+   TRIAL & RETURN REQUEST FORM
+========================================= */
+
+.trial-request-section {
+    padding: 110px 0;
+    background-color: var(--white);
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.trial-request-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.trial-request-label {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    font-family: var(--body-font);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+
+    color: var(--primary-color);
+}
+
+.trial-request-heading h2 {
+    margin-bottom: 18px;
+
+    font-family: var(--heading-font);
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.15;
+
+    color: var(--primary-color);
+}
+
+.trial-request-heading h2 em {
+    display: block;
+
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.trial-request-heading p {
+    max-width: 620px;
+    margin: 0 auto;
+
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.trial-request-layout {
+    display: grid;
+    grid-template-columns: 1.45fr 0.7fr;
+    gap: 35px;
     align-items: stretch;
 }
 
 
-/* Left List */
+/* =========================================
+   FORM WRAPPER
+========================================= */
 
-.return-info-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+.trial-request-form-wrap {
+    padding: 38px;
+
+    background-color: #F7F3EE;
+
+    border: 1px solid rgba(59, 48, 42, 0.08);
+    border-radius: 10px;
 }
 
-.return-info-item {
+
+/* =========================================
+   FORM ROW
+========================================= */
+
+.trial-request-row {
     display: grid;
-    grid-template-columns: 70px 1fr;
-    gap: 25px;
-    padding: 30px 0;
-    border-top: 1px solid rgba(59, 48, 42, 0.18);
-}
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 
-.return-info-item:last-child {
-    border-bottom: 1px solid rgba(59, 48, 42, 0.18);
-}
-
-.return-info-number {
-    font-family: var(--heading-font);
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.return-info-content h3 {
-    margin: 0 0 9px;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.return-info-content p {
-    margin: 0;
-    max-width: 580px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.7;
-    color: var(--primary-color);
+    margin-bottom: 22px;
 }
 
 
-/* Right Note */
+/* =========================================
+   FORM FIELD
+========================================= */
 
-.return-info-note {
-    padding: 45px 40px;
-    background-color: var(--white);
-    border: 1px solid rgba(59, 48, 42, 0.1);
+.trial-request-field {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    margin-bottom: 22px;
 }
 
-.return-info-note-icon {
-    width: 52px;
-    height: 52px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
+.trial-request-row .trial-request-field {
+    margin-bottom: 0;
 }
 
-.return-info-note-icon i {
-    font-size: 19px;
-    color: var(--primary-color);
-}
+.trial-request-field label {
+    margin-bottom: 9px;
 
-.return-info-note>span {
-    display: block;
-    margin-bottom: 12px;
     font-family: var(--body-font);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    color: var(--primary-color);
+}
+
+.trial-request-field label span {
     font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.17em;
-    color: var(--primary-color);
-}
-
-.return-info-note h3 {
-    margin: 0 0 16px;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: var(--primary-color);
-}
-
-.return-info-note p {
-    margin: 0 0 28px;
-    font-size: 15px;
     font-weight: 400;
-    line-height: 1.7;
-    color: var(--primary-color);
+
+    opacity: 0.55;
 }
 
-.return-info-note a {
-    width: fit-content;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--primary-color);
+
+/* =========================================
+   INPUT / SELECT / TEXTAREA
+========================================= */
+
+.trial-request-field input,
+.trial-request-field select,
+.trial-request-field textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
     font-family: var(--body-font);
     font-size: 14px;
-    font-weight: 600;
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.return-info-note a i {
-    font-size: 12px;
-    transition: var(--transition);
-}
-
-.return-info-note a:hover i {
-    transform: translateX(4px);
-}
-
-/* ================================
-   RETURN START SECTION
-================================ */
-
-.return-start-section {
-    padding: 110px 0;
-    background-color: var(--white);
-}
-
-.return-start-heading {
-    max-width: 720px;
-    margin: 0 auto 60px;
-    text-align: center;
-}
-
-.return-start-heading>span {
-    display: block;
-    margin-bottom: 14px;
-    font-family: var(--body-font);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    color: var(--primary-color);
-}
-
-.return-start-heading h2 {
-    margin: 0 0 18px;
-    font-size: 46px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: var(--primary-color);
-}
-
-.return-start-heading p {
-    max-width: 640px;
-    margin: 0 auto;
-    font-size: 16px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.5;
+
     color: var(--primary-color);
+    background-color: var(--white);
+
+    border: 1px solid rgba(59, 48, 42, 0.14);
+    border-radius: 5px;
+
+    outline: none;
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.trial-request-field input,
+.trial-request-field select {
+    height: 50px;
+}
+
+.trial-request-field textarea {
+    min-height: 125px;
+
+    resize: vertical;
+}
+
+.trial-request-field input::placeholder,
+.trial-request-field textarea::placeholder {
+    color: var(--primary-color);
+    opacity: 0.42;
+}
+
+.trial-request-field select {
+    cursor: pointer;
 }
 
 
-/* Cards */
+/* =========================================
+   INPUT FOCUS
+========================================= */
 
-.return-start-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
+.trial-request-field input:focus,
+.trial-request-field select:focus,
+.trial-request-field textarea:focus {
+    border-color: var(--primary-color);
 
-.return-start-card {
-    min-height: 330px;
-    padding: 35px 32px;
-    background-color: #F7F3EE;
-    border: 1px solid rgba(59, 48, 42, 0.08);
-    display: flex;
-    flex-direction: column;
-    transition: var(--transition);
-}
-
-.return-start-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(59, 48, 42, 0.18);
+    box-shadow: 0 0 0 3px rgba(59, 48, 42, 0.06);
 }
 
 
-/* Card Top */
+/* =========================================
+   FORM BOTTOM
+========================================= */
 
-.return-start-top {
+.trial-request-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 35px;
+
+    gap: 25px;
+
+    margin-top: 5px;
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(59, 48, 42, 0.10);
 }
 
-.return-start-top span {
-    font-family: var(--heading-font);
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
 
-.return-start-top i {
-    width: 48px;
-    height: 48px;
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.trial-request-check {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    border-radius: 50%;
-    font-size: 17px;
-    color: var(--primary-color);
+    align-items: flex-start;
+
+    gap: 10px;
+
+    max-width: 380px;
+
+    cursor: pointer;
 }
 
+.trial-request-check input {
+    width: 16px;
+    height: 16px;
 
-/* Card Content */
+    flex-shrink: 0;
 
-.return-start-card h3 {
-    margin: 0 0 12px;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: var(--primary-color);
+    margin-top: 2px;
+
+    accent-color: var(--primary-color);
+
+    cursor: pointer;
 }
 
-.return-start-card p {
-    margin: 0 0 25px;
-    font-size: 15px;
+.trial-request-check span {
+    font-family: var(--body-font);
+    font-size: 12px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.55;
+
     color: var(--primary-color);
+    opacity: 0.65;
 }
 
 
-/* Link */
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
 
-.return-start-card a {
-    margin-top: auto;
-    width: fit-content;
+.trial-request-submit {
+    min-height: 50px;
+
     display: inline-flex;
     align-items: center;
-    gap: 9px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--primary-color);
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+
+    padding: 0 24px;
+
     font-family: var(--body-font);
     font-size: 14px;
     font-weight: 600;
-    color: var(--primary-color);
-    text-decoration: none;
+    line-height: 1.4;
+
+    color: var(--white);
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
     transition: var(--transition);
 }
 
-.return-start-card a i {
-    font-size: 11px;
-    transition: var(--transition);
+.trial-request-submit:hover {
+    background-color: #6A5A4E;
+
+    transform: translateY(-2px);
 }
 
-.return-start-card a:hover i {
+.trial-request-submit i {
+    font-size: 12px;
+
+    transition: transform var(--transition);
+}
+
+.trial-request-submit:hover i {
     transform: translateX(4px);
 }
 
-/* ================================
-   TRIAL FINAL CTA
-================================ */
 
-.trial-final-cta-section {
-    position: relative;
-    min-height: 560px;
-    padding: 120px 0;
+/* =========================================
+   SIDE INFORMATION
+========================================= */
+
+.trial-request-info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 38px;
+
+    background-color: var(--primary-color);
+
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   INFO ICON
+========================================= */
+
+.trial-request-info-icon {
+    width: 54px;
+    height: 54px;
+
     display: flex;
     align-items: center;
-    background-image: url("../images/trial-final-cta.jpg");
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+    border-radius: 50%;
 }
 
-.trial-final-cta-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(59, 48, 42, 0.62);
+.trial-request-info-icon i {
+    font-size: 18px;
 }
 
-.trial-final-cta-content {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
 
-.trial-final-cta-label {
-    display: block;
-    margin-bottom: 18px;
+/* =========================================
+   INFO CONTENT
+========================================= */
+
+.trial-request-info>span {
+    margin-bottom: 12px;
+
     font-family: var(--body-font);
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.18em;
+
     color: var(--secondary-color);
 }
 
-.trial-final-cta-content h2 {
-    margin: 0 0 22px;
-    font-size: 52px;
+.trial-request-info h3 {
+    margin-bottom: 17px;
+
+    font-family: var(--heading-font);
+    font-size: 30px;
     font-weight: 600;
-    line-height: 1.15;
+    line-height: 1.2;
+
     color: var(--white);
 }
 
-.trial-final-cta-content h2 em {
+.trial-request-info h3 em {
     display: block;
-    font-style: normal;
+
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.trial-request-info>p {
+    margin-bottom: 32px;
+
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75;
+
+    color: var(--white);
+    opacity: 0.72;
+}
+
+
+/* =========================================
+   CONTACT DETAILS
+========================================= */
+
+.trial-request-contact {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.trial-request-contact-item {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.trial-request-contact-item>i {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+    border-radius: 50%;
+
+    font-size: 13px;
+}
+
+.trial-request-contact-item div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.trial-request-contact-item small {
+    font-family: var(--body-font);
+    font-size: 11px;
+    font-weight: 400;
+
+    color: var(--white);
+    opacity: 0.55;
+}
+
+.trial-request-contact-item strong {
+    font-family: var(--body-font);
+    font-size: 13px;
+    font-weight: 600;
+
+    color: var(--white);
+}
+
+
+/* =========================================
+   INFORMATION NOTE
+========================================= */
+
+.trial-request-note {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.trial-request-note>i {
+    margin-top: 3px;
+
+    flex-shrink: 0;
+
+    color: var(--secondary-color);
+
+    font-size: 14px;
+}
+
+.trial-request-note p {
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    color: var(--white);
+    opacity: 0.58;
+}
+
+/* =========================================
+   SECTION 6
+   FINAL TRIAL CTA
+========================================= */
+
+.trial-action-cta-section {
+    position: relative;
+
+    padding: 115px 0;
+
+    background-image: url("../images/trial-final-cta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.trial-action-cta-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(45, 37, 32, 0.72);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.trial-action-cta-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.trial-action-cta-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    font-family: var(--body-font);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+
     color: var(--secondary-color);
 }
 
-.trial-final-cta-content>p {
+
+/* =========================================
+   HEADING
+========================================= */
+
+.trial-action-cta-content h2 {
+    margin-bottom: 20px;
+
+    font-family: var(--heading-font);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.12;
+
+    color: var(--white);
+}
+
+.trial-action-cta-content h2 em {
+    display: block;
+
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-style: italic;
+
+    color: var(--secondary-color);
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.trial-action-cta-content>p {
     max-width: 610px;
-    margin: 0 auto 32px;
+
+    margin: 0 auto;
+
+    font-family: var(--body-font);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75;
+
     color: var(--white);
+    opacity: 0.78;
 }
 
 
-/* Buttons */
+/* =========================================
+   CTA BUTTONS
+========================================= */
 
-.trial-final-cta-actions {
+.trial-action-cta-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    margin-bottom: 42px;
+
+    gap: 14px;
+
+    margin-top: 35px;
 }
 
-.trial-final-cta-primary {
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.trial-action-cta-primary {
+    min-height: 52px;
+
     display: inline-flex;
     align-items: center;
-    gap: 11px;
-    padding: 15px 24px;
-    background-color: var(--white);
-    color: var(--primary-color);
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 27px;
+
     font-family: var(--body-font);
     font-size: 14px;
     font-weight: 600;
-    text-decoration: none;
-    transition: var(--transition);
-}
+    line-height: 1.4;
 
-.trial-final-cta-primary i {
-    font-size: 12px;
-    transition: var(--transition);
-}
-
-.trial-final-cta-primary:hover {
+    color: var(--primary-color);
     background-color: var(--secondary-color);
+
+    border-radius: 5px;
+
+    transition: var(--transition);
 }
 
-.trial-final-cta-primary:hover i {
+.trial-action-cta-primary:hover {
+    color: var(--white);
+    background-color: #6A5A4E;
+
+    transform: translateY(-2px);
+}
+
+.trial-action-cta-primary i {
+    font-size: 12px;
+
+    transition: transform var(--transition);
+}
+
+.trial-action-cta-primary:hover i {
     transform: translateX(4px);
 }
 
-.trial-final-cta-secondary {
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--white);
-    color: var(--white);
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.trial-action-cta-secondary {
+    min-height: 52px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 27px;
+
     font-family: var(--body-font);
     font-size: 14px;
     font-weight: 600;
-    text-decoration: none;
+    line-height: 1.4;
+
+    color: var(--white);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 5px;
+
     transition: var(--transition);
 }
 
-.trial-final-cta-secondary:hover {
-    color: var(--secondary-color);
-    border-color: var(--secondary-color);
+.trial-action-cta-secondary:hover {
+    color: var(--primary-color);
+    background-color: var(--white);
+
+    border-color: var(--white);
 }
 
 
-/* Contact Details */
+/* =========================================
+   SUPPORT LINK
+========================================= */
 
-.trial-final-cta-contact {
+.trial-action-cta-help {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
-    padding-top: 25px;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    gap: 9px;
+
+    margin-top: 28px;
 }
 
-.trial-final-cta-contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+.trial-action-cta-help>i {
+    font-size: 13px;
 
-.trial-final-cta-contact-item i {
-    font-size: 14px;
     color: var(--secondary-color);
 }
 
-.trial-final-cta-contact-item span {
+.trial-action-cta-help span {
     font-family: var(--body-font);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
+
+    color: var(--white);
+    opacity: 0.68;
+}
+
+.trial-action-cta-help a {
+    font-weight: 600;
+
+    color: var(--secondary-color);
+
+    transition: var(--transition);
+}
+
+.trial-action-cta-help a:hover {
     color: var(--white);
 }
 
@@ -26347,4 +27329,2668 @@ html.dark-mode[dir="rtl"] .home-hero-content p {
         gap: 20px !important;
     }
 
+}
+
+/* =========================================================
+   RESPONSIVE CSS
+   TRIAL & RETURN PAGE
+   SECTIONS 2 - 6
+========================================================= */
+
+
+/* =========================================================
+   LARGE LAPTOP / SMALL DESKTOP
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    /* -----------------------------------------
+       SECTION 2
+       HOW TO BOOK YOUR TRIAL
+    ----------------------------------------- */
+
+    .trial-booking-section {
+        padding: 90px 0;
+    }
+
+    .trial-booking-steps {
+        gap: 16px;
+    }
+
+    .trial-booking-card {
+        padding: 25px 22px;
+    }
+
+    .trial-booking-card h3 {
+        font-size: 21px;
+    }
+
+    .trial-booking-card p {
+        font-size: 13px;
+    }
+
+    .trial-booking-action {
+        padding: 24px 26px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 3
+       TRIAL EXPERIENCE
+    ----------------------------------------- */
+
+    .trial-experience-section {
+        padding: 90px 0;
+    }
+
+    .trial-experience-layout {
+        gap: 55px;
+    }
+
+    .trial-experience-content h2 {
+        font-size: 40px;
+    }
+
+    .trial-experience-visual,
+    .trial-experience-image {
+        height: 520px;
+        min-height: 520px;
+    }
+
+    .trial-experience-badge {
+        left: -20px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 4
+       TRIAL GUIDELINES
+    ----------------------------------------- */
+
+    .trial-guidelines-section {
+        padding: 90px 0;
+    }
+
+    .trial-guidelines-layout {
+        gap: 40px;
+    }
+
+    .trial-guidelines-feature {
+        min-height: 500px;
+        padding: 35px;
+    }
+
+    .trial-guidelines-feature h3 {
+        font-size: 31px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 5
+       REQUEST FORM
+    ----------------------------------------- */
+
+    .trial-request-section {
+        padding: 90px 0;
+    }
+
+    .trial-request-layout {
+        grid-template-columns: 1.35fr 0.75fr;
+        gap: 25px;
+    }
+
+    .trial-request-form-wrap,
+    .trial-request-info {
+        padding: 32px;
+    }
+
+    .trial-request-info h3 {
+        font-size: 28px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 6
+       FINAL CTA
+    ----------------------------------------- */
+
+    .trial-action-cta-section {
+        padding: 100px 0;
+    }
+
+    .trial-action-cta-content h2 {
+        font-size: 44px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET LANDSCAPE
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    /* -----------------------------------------
+       SECTION 2
+       HOW TO BOOK YOUR TRIAL
+    ----------------------------------------- */
+
+    .trial-booking-section {
+        padding: 80px 0;
+    }
+
+    .trial-booking-heading {
+        margin-bottom: 45px;
+    }
+
+    .trial-booking-heading h2 {
+        font-size: 38px;
+    }
+
+    .trial-booking-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .trial-booking-card {
+        min-height: 255px;
+    }
+
+    .trial-booking-action {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .trial-booking-btn {
+        width: auto;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 3
+       TRIAL EXPERIENCE
+    ----------------------------------------- */
+
+    .trial-experience-section {
+        padding: 80px 0;
+    }
+
+    .trial-experience-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .trial-experience-content {
+        max-width: 700px;
+    }
+
+    .trial-experience-content h2 {
+        max-width: 600px;
+        font-size: 40px;
+    }
+
+    .trial-experience-content>p {
+        max-width: 650px;
+    }
+
+    .trial-experience-point p {
+        max-width: 600px;
+    }
+
+    .trial-experience-visual {
+        width: 100%;
+        min-height: 500px;
+    }
+
+    .trial-experience-image {
+        width: 100%;
+        height: 500px;
+    }
+
+    .trial-experience-badge {
+        left: 25px;
+        bottom: 25px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 4
+       TRIAL GUIDELINES
+    ----------------------------------------- */
+
+    .trial-guidelines-section {
+        padding: 80px 0;
+    }
+
+    .trial-guidelines-heading h2 {
+        font-size: 38px;
+    }
+
+    .trial-guidelines-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .trial-guidelines-feature {
+        min-height: 420px;
+    }
+
+    .trial-guidelines-feature h3 {
+        font-size: 32px;
+    }
+
+    .trial-guidelines-feature p {
+        max-width: 600px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 5
+       REQUEST FORM
+    ----------------------------------------- */
+
+    .trial-request-section {
+        padding: 80px 0;
+    }
+
+    .trial-request-heading h2 {
+        font-size: 38px;
+    }
+
+    .trial-request-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .trial-request-info {
+        min-height: auto;
+    }
+
+    .trial-request-info h3 {
+        font-size: 30px;
+    }
+
+    .trial-request-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .trial-request-note {
+        margin-top: 25px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 6
+       FINAL CTA
+    ----------------------------------------- */
+
+    .trial-action-cta-section {
+        padding: 90px 0;
+    }
+
+    .trial-action-cta-content h2 {
+        font-size: 42px;
+    }
+
+    .trial-action-cta-content>p {
+        max-width: 600px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET PORTRAIT
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------
+       SECTION 2
+       HOW TO BOOK YOUR TRIAL
+    ----------------------------------------- */
+
+    .trial-booking-section {
+        padding: 70px 0;
+    }
+
+    .trial-booking-heading {
+        max-width: 620px;
+        margin-bottom: 38px;
+    }
+
+    .trial-booking-heading h2 {
+        font-size: 34px;
+    }
+
+    .trial-booking-heading p {
+        font-size: 15px;
+    }
+
+    .trial-booking-steps {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .trial-booking-card {
+        min-height: 245px;
+        padding: 23px 20px;
+    }
+
+    .trial-booking-card-top {
+        margin-bottom: 23px;
+    }
+
+    .trial-booking-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .trial-booking-card h3 {
+        font-size: 20px;
+    }
+
+    .trial-booking-action {
+        margin-top: 25px;
+        padding: 23px;
+    }
+
+    .trial-booking-action-content h3 {
+        font-size: 22px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 3
+       TRIAL EXPERIENCE
+    ----------------------------------------- */
+
+    .trial-experience-section {
+        padding: 70px 0;
+    }
+
+    .trial-experience-layout {
+        gap: 40px;
+    }
+
+    .trial-experience-content h2 {
+        font-size: 36px;
+    }
+
+    .trial-experience-content>p {
+        font-size: 15px;
+    }
+
+    .trial-experience-point {
+        gap: 14px;
+        padding: 17px 0;
+    }
+
+    .trial-experience-point-icon {
+        width: 43px;
+        height: 43px;
+    }
+
+    .trial-experience-point h3 {
+        font-size: 19px;
+    }
+
+    .trial-experience-point p {
+        font-size: 13px;
+    }
+
+    .trial-experience-visual {
+        min-height: 430px;
+    }
+
+    .trial-experience-image {
+        height: 430px;
+    }
+
+    .trial-experience-badge {
+        left: 20px;
+        bottom: 20px;
+        min-width: 175px;
+        padding: 16px 19px;
+    }
+
+    .trial-experience-badge strong {
+        font-size: 18px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 4
+       TRIAL GUIDELINES
+    ----------------------------------------- */
+
+    .trial-guidelines-section {
+        padding: 70px 0;
+    }
+
+    .trial-guidelines-heading {
+        margin-bottom: 40px;
+    }
+
+    .trial-guidelines-heading h2 {
+        font-size: 34px;
+    }
+
+    .trial-guidelines-heading p {
+        font-size: 15px;
+    }
+
+    .trial-guidelines-feature {
+        min-height: 430px;
+        padding: 32px;
+    }
+
+    .trial-guidelines-feature h3 {
+        font-size: 30px;
+    }
+
+    .trial-guidelines-feature p {
+        font-size: 14px;
+    }
+
+    .trial-guidelines-item {
+        grid-template-columns: 48px 1fr;
+        gap: 15px;
+        padding: 23px 0;
+    }
+
+    .trial-guidelines-item-number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .trial-guidelines-item-content h3 {
+        font-size: 19px;
+    }
+
+    .trial-guidelines-item-content p {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 5
+       REQUEST FORM
+    ----------------------------------------- */
+
+    .trial-request-section {
+        padding: 70px 0;
+    }
+
+    .trial-request-heading {
+        margin-bottom: 40px;
+    }
+
+    .trial-request-heading h2 {
+        font-size: 34px;
+    }
+
+    .trial-request-heading p {
+        font-size: 15px;
+    }
+
+    .trial-request-form-wrap {
+        padding: 28px;
+    }
+
+    .trial-request-row {
+        gap: 15px;
+        margin-bottom: 18px;
+    }
+
+    .trial-request-field {
+        margin-bottom: 18px;
+    }
+
+    .trial-request-field label {
+        font-size: 12px;
+    }
+
+    .trial-request-field input,
+    .trial-request-field select {
+        height: 48px;
+    }
+
+    .trial-request-field input,
+    .trial-request-field select,
+    .trial-request-field textarea {
+        padding: 13px 14px;
+        font-size: 13px;
+    }
+
+    .trial-request-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .trial-request-submit {
+        width: 100%;
+    }
+
+    .trial-request-check {
+        max-width: 100%;
+    }
+
+    .trial-request-info {
+        padding: 30px;
+    }
+
+    .trial-request-info-icon {
+        margin-bottom: 25px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 6
+       FINAL CTA
+    ----------------------------------------- */
+
+    .trial-action-cta-section {
+        padding: 80px 0;
+    }
+
+    .trial-action-cta-content {
+        max-width: 650px;
+    }
+
+    .trial-action-cta-content h2 {
+        font-size: 38px;
+    }
+
+    .trial-action-cta-content>p {
+        font-size: 15px;
+    }
+
+    .trial-action-cta-buttons {
+        margin-top: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   576px
+========================================================= */
+
+@media (max-width: 576px) {
+
+    /* -----------------------------------------
+       SECTION 2
+       HOW TO BOOK YOUR TRIAL
+    ----------------------------------------- */
+
+    .trial-booking-section {
+        padding: 60px 0;
+    }
+
+    .trial-booking-heading {
+        margin-bottom: 32px;
+    }
+
+    .trial-booking-label {
+        font-size: 11px;
+    }
+
+    .trial-booking-heading h2 {
+        font-size: 30px;
+    }
+
+    .trial-booking-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .trial-booking-steps {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .trial-booking-card {
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .trial-booking-card-top {
+        margin-bottom: 20px;
+    }
+
+    .trial-booking-card h3 {
+        font-size: 20px;
+    }
+
+    .trial-booking-card p {
+        font-size: 13px;
+    }
+
+    .trial-booking-action {
+        gap: 20px;
+        margin-top: 20px;
+        padding: 22px;
+    }
+
+    .trial-booking-action-content h3 {
+        font-size: 20px;
+    }
+
+    .trial-booking-action-content p {
+        font-size: 13px;
+    }
+
+    .trial-booking-btn {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 3
+       TRIAL EXPERIENCE
+    ----------------------------------------- */
+
+    .trial-experience-section {
+        padding: 60px 0;
+    }
+
+    .trial-experience-layout {
+        gap: 35px;
+    }
+
+    .trial-experience-label {
+        font-size: 11px;
+    }
+
+    .trial-experience-content h2 {
+        font-size: 31px;
+    }
+
+    .trial-experience-content>p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .trial-experience-point {
+        gap: 12px;
+        padding: 15px 0;
+    }
+
+    .trial-experience-point-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .trial-experience-point-icon i {
+        font-size: 13px;
+    }
+
+    .trial-experience-point h3 {
+        font-size: 18px;
+    }
+
+    .trial-experience-point p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .trial-experience-visual {
+        min-height: 350px;
+    }
+
+    .trial-experience-image {
+        height: 350px;
+        border-radius: 9px;
+    }
+
+    .trial-experience-badge {
+        left: 15px;
+        bottom: 15px;
+        min-width: 155px;
+        padding: 14px 16px;
+    }
+
+    .trial-experience-badge span {
+        font-size: 9px;
+    }
+
+    .trial-experience-badge strong {
+        font-size: 16px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 4
+       TRIAL GUIDELINES
+    ----------------------------------------- */
+
+    .trial-guidelines-section {
+        padding: 60px 0;
+    }
+
+    .trial-guidelines-heading {
+        margin-bottom: 32px;
+    }
+
+    .trial-guidelines-label {
+        font-size: 11px;
+    }
+
+    .trial-guidelines-heading h2 {
+        font-size: 30px;
+    }
+
+    .trial-guidelines-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .trial-guidelines-layout {
+        gap: 20px;
+    }
+
+    .trial-guidelines-feature {
+        min-height: 390px;
+        padding: 27px;
+    }
+
+    .trial-guidelines-feature-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .trial-guidelines-feature h3 {
+        font-size: 28px;
+    }
+
+    .trial-guidelines-feature p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .trial-guidelines-item {
+        grid-template-columns: 43px 1fr;
+        gap: 12px;
+        padding: 20px 0;
+    }
+
+    .trial-guidelines-item-number {
+        width: 38px;
+        height: 38px;
+        font-size: 13px;
+    }
+
+    .trial-guidelines-item-content h3 {
+        font-size: 18px;
+    }
+
+    .trial-guidelines-item-content p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .trial-guidelines-item:hover {
+        padding-left: 0;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 5
+       REQUEST FORM
+    ----------------------------------------- */
+
+    .trial-request-section {
+        padding: 60px 0;
+    }
+
+    .trial-request-heading {
+        margin-bottom: 32px;
+    }
+
+    .trial-request-label {
+        font-size: 11px;
+    }
+
+    .trial-request-heading h2 {
+        font-size: 30px;
+    }
+
+    .trial-request-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .trial-request-layout {
+        gap: 18px;
+    }
+
+    .trial-request-form-wrap {
+        padding: 22px 18px;
+        border-radius: 8px;
+    }
+
+    .trial-request-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .trial-request-field,
+    .trial-request-row .trial-request-field {
+        margin-bottom: 18px;
+    }
+
+    .trial-request-field label {
+        margin-bottom: 7px;
+        font-size: 12px;
+    }
+
+    .trial-request-field input,
+    .trial-request-field select {
+        height: 47px;
+    }
+
+    .trial-request-field input,
+    .trial-request-field select,
+    .trial-request-field textarea {
+        padding: 12px 13px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+
+    .trial-request-field textarea {
+        min-height: 110px;
+    }
+
+    .trial-request-bottom {
+        margin-top: 0;
+        padding-top: 18px;
+        gap: 17px;
+    }
+
+    .trial-request-check {
+        gap: 8px;
+    }
+
+    .trial-request-check span {
+        font-size: 11px;
+    }
+
+    .trial-request-submit {
+        min-height: 48px;
+        font-size: 13px;
+    }
+
+    .trial-request-info {
+        padding: 25px 22px;
+        border-radius: 8px;
+    }
+
+    .trial-request-info-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 23px;
+    }
+
+    .trial-request-info>span {
+        font-size: 10px;
+    }
+
+    .trial-request-info h3 {
+        font-size: 26px;
+    }
+
+    .trial-request-info>p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .trial-request-contact {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .trial-request-contact-item>i {
+        width: 35px;
+        height: 35px;
+    }
+
+    .trial-request-contact-item strong {
+        font-size: 12px;
+    }
+
+    .trial-request-note {
+        padding-top: 22px;
+        margin-top: 22px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 6
+       FINAL CTA
+    ----------------------------------------- */
+
+    .trial-action-cta-section {
+        padding: 70px 0;
+    }
+
+    .trial-action-cta-content {
+        max-width: 100%;
+    }
+
+    .trial-action-cta-label {
+        font-size: 10px;
+    }
+
+    .trial-action-cta-content h2 {
+        font-size: 31px;
+        line-height: 1.15;
+    }
+
+    .trial-action-cta-content>p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .trial-action-cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 27px;
+    }
+
+    .trial-action-cta-primary,
+    .trial-action-cta-secondary {
+        width: 100%;
+        min-height: 49px;
+    }
+
+    .trial-action-cta-help {
+        align-items: flex-start;
+        margin-top: 23px;
+    }
+
+    .trial-action-cta-help span {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* -----------------------------------------
+       SECTION 2
+    ----------------------------------------- */
+
+    .trial-booking-section {
+        padding: 50px 0;
+    }
+
+    .trial-booking-heading h2 {
+        font-size: 28px;
+    }
+
+    .trial-booking-heading p {
+        font-size: 13px;
+    }
+
+    .trial-booking-card {
+        padding: 20px;
+    }
+
+    .trial-booking-card-top>span {
+        font-size: 16px;
+    }
+
+    .trial-booking-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .trial-booking-card h3 {
+        font-size: 19px;
+    }
+
+    .trial-booking-card p {
+        font-size: 12px;
+    }
+
+    .trial-booking-action {
+        padding: 20px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 3
+    ----------------------------------------- */
+
+    .trial-experience-section {
+        padding: 50px 0;
+    }
+
+    .trial-experience-content h2 {
+        font-size: 28px;
+    }
+
+    .trial-experience-content>p {
+        font-size: 13px;
+    }
+
+    .trial-experience-point h3 {
+        font-size: 17px;
+    }
+
+    .trial-experience-point p {
+        font-size: 12px;
+    }
+
+    .trial-experience-visual {
+        min-height: 300px;
+    }
+
+    .trial-experience-image {
+        height: 300px;
+    }
+
+    .trial-experience-badge {
+        left: 12px;
+        bottom: 12px;
+        min-width: 145px;
+        padding: 12px 14px;
+    }
+
+    .trial-experience-badge strong {
+        font-size: 15px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 4
+    ----------------------------------------- */
+
+    .trial-guidelines-section {
+        padding: 50px 0;
+    }
+
+    .trial-guidelines-heading h2 {
+        font-size: 28px;
+    }
+
+    .trial-guidelines-heading p {
+        font-size: 13px;
+    }
+
+    .trial-guidelines-feature {
+        min-height: 360px;
+        padding: 23px;
+    }
+
+    .trial-guidelines-feature h3 {
+        font-size: 26px;
+    }
+
+    .trial-guidelines-feature p {
+        font-size: 12px;
+    }
+
+    .trial-guidelines-item {
+        grid-template-columns: 39px 1fr;
+        gap: 10px;
+    }
+
+    .trial-guidelines-item-number {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .trial-guidelines-item-content h3 {
+        font-size: 17px;
+    }
+
+    .trial-guidelines-item-content p {
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 5
+    ----------------------------------------- */
+
+    .trial-request-section {
+        padding: 50px 0;
+    }
+
+    .trial-request-heading h2 {
+        font-size: 28px;
+    }
+
+    .trial-request-heading p {
+        font-size: 13px;
+    }
+
+    .trial-request-form-wrap {
+        padding: 20px 15px;
+    }
+
+    .trial-request-info {
+        padding: 22px 18px;
+    }
+
+    .trial-request-info h3 {
+        font-size: 24px;
+    }
+
+    .trial-request-info>p {
+        font-size: 12px;
+    }
+
+    .trial-request-contact-item strong {
+        font-size: 11px;
+    }
+
+    .trial-request-note p {
+        font-size: 11px;
+    }
+
+
+    /* -----------------------------------------
+       SECTION 6
+    ----------------------------------------- */
+
+    .trial-action-cta-section {
+        padding: 60px 0;
+    }
+
+    .trial-action-cta-content h2 {
+        font-size: 28px;
+    }
+
+    .trial-action-cta-content>p {
+        font-size: 13px;
+    }
+
+    .trial-action-cta-primary,
+    .trial-action-cta-secondary {
+        min-height: 47px;
+        font-size: 13px;
+    }
+
+    .trial-action-cta-help span {
+        font-size: 11px;
+    }
+
+}
+
+/* =========================================================
+   TRIAL PERIOD & RETURNS
+   NEW SECTIONS — DARK MODE
+========================================================= */
+
+
+/* =========================================================
+   SECTION 2
+   TRIAL BOOKING / PROCESS
+========================================================= */
+
+html.dark-mode .trial-booking-section {
+    background-color: #181411;
+}
+
+html.dark-mode .trial-booking-heading,
+html.dark-mode .trial-booking-heading h2,
+html.dark-mode .trial-booking-heading h2 em,
+html.dark-mode .trial-booking-heading p {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-booking-label {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-booking-card {
+    background-color: #211C18;
+    border-color: rgba(241, 233, 225, 0.12);
+}
+
+html.dark-mode .trial-booking-card-top>span {
+    color: rgba(241, 233, 225, 0.45);
+}
+
+html.dark-mode .trial-booking-icon {
+    background-color: #2A2420;
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-booking-card h3 {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-booking-card p {
+    color: rgba(241, 233, 225, 0.63);
+}
+
+html.dark-mode .trial-booking-action {
+    background-color: #2A2420;
+    border-color: rgba(241, 233, 225, 0.12);
+}
+
+html.dark-mode .trial-booking-action-content h3 {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-booking-action-content p {
+    color: rgba(241, 233, 225, 0.63);
+}
+
+html.dark-mode .trial-booking-btn {
+    background-color: #F1E9E1;
+    color: #211C18;
+}
+
+html.dark-mode .trial-booking-btn:hover {
+    background-color: #E8DED2;
+    color: #211C18;
+}
+
+
+/* =========================================================
+   SECTION 3
+   TRIAL EXPERIENCE
+========================================================= */
+
+html.dark-mode .trial-experience-section {
+    background-color: #211C18;
+}
+
+html.dark-mode .trial-experience-label {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-experience-content h2,
+html.dark-mode .trial-experience-content h2 em {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-experience-content>p {
+    color: rgba(241, 233, 225, 0.68);
+}
+
+html.dark-mode .trial-experience-point {
+    border-color: rgba(241, 233, 225, 0.12);
+}
+
+html.dark-mode .trial-experience-point-icon {
+    background-color: #2A2420;
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-experience-point h3 {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-experience-point p {
+    color: rgba(241, 233, 225, 0.60);
+}
+
+html.dark-mode .trial-experience-badge {
+    background-color: #181411;
+    border-color: rgba(241, 233, 225, 0.12);
+}
+
+html.dark-mode .trial-experience-badge span {
+    color: rgba(241, 233, 225, 0.55);
+}
+
+html.dark-mode .trial-experience-badge strong {
+    color: #F1E9E1;
+}
+
+
+/* =========================================================
+   SECTION 4
+   TRIAL & RETURN GUIDELINES
+========================================================= */
+
+html.dark-mode .trial-guidelines-section {
+    background-color: #181411;
+}
+
+html.dark-mode .trial-guidelines-label {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-guidelines-heading h2,
+html.dark-mode .trial-guidelines-heading h2 em {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-guidelines-heading p {
+    color: rgba(241, 233, 225, 0.63);
+}
+
+
+/* Feature Card */
+
+html.dark-mode .trial-guidelines-feature {
+    border-color: rgba(241, 233, 225, 0.10);
+}
+
+html.dark-mode .trial-guidelines-feature::before {
+    background: linear-gradient(180deg,
+            rgba(18, 14, 12, 0.30) 0%,
+            rgba(18, 14, 12, 0.62) 45%,
+            rgba(18, 14, 12, 0.94) 100%);
+}
+
+html.dark-mode .trial-guidelines-feature-icon {
+    background-color: #E8DED2;
+    color: #211C18;
+}
+
+html.dark-mode .trial-guidelines-feature>span {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-guidelines-feature h3 {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-guidelines-feature p {
+    color: rgba(241, 233, 225, 0.76);
+}
+
+
+/* Guidelines List */
+
+html.dark-mode .trial-guidelines-list {
+    border-top-color: rgba(241, 233, 225, 0.15);
+}
+
+html.dark-mode .trial-guidelines-item {
+    border-bottom-color: rgba(241, 233, 225, 0.15);
+}
+
+html.dark-mode .trial-guidelines-item-number {
+    background-color: #2A2420;
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-guidelines-item-content h3 {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-guidelines-item-content p {
+    color: rgba(241, 233, 225, 0.63);
+}
+
+
+/* =========================================================
+   SECTION 5
+   TRIAL / RETURN REQUEST FORM
+========================================================= */
+
+html.dark-mode .trial-request-section {
+    background-color: #211C18;
+}
+
+html.dark-mode .trial-request-label {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-request-heading h2,
+html.dark-mode .trial-request-heading h2 em {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-request-heading p {
+    color: rgba(241, 233, 225, 0.68);
+}
+
+
+/* Form Wrapper */
+
+html.dark-mode .trial-request-form-wrap {
+    background-color: #181411;
+    border-color: rgba(241, 233, 225, 0.10);
+}
+
+
+/* Labels */
+
+html.dark-mode .trial-request-field label {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-request-field label span {
+    color: rgba(241, 233, 225, 0.45);
+}
+
+
+/* Inputs */
+
+html.dark-mode .trial-request-field input,
+html.dark-mode .trial-request-field select,
+html.dark-mode .trial-request-field textarea {
+    color: #F1E9E1;
+    background-color: #211C18;
+
+    border-color: rgba(241, 233, 225, 0.16);
+}
+
+html.dark-mode .trial-request-field input::placeholder,
+html.dark-mode .trial-request-field textarea::placeholder {
+    color: rgba(241, 233, 225, 0.42);
+}
+
+html.dark-mode .trial-request-field input:focus,
+html.dark-mode .trial-request-field select:focus,
+html.dark-mode .trial-request-field textarea:focus {
+    border-color: #E8DED2;
+
+    box-shadow: 0 0 0 3px rgba(232, 222, 210, 0.08);
+}
+
+
+/* Select */
+
+html.dark-mode .trial-request-field select {
+    color-scheme: dark;
+}
+
+
+/* Form Bottom */
+
+html.dark-mode .trial-request-bottom {
+    border-top-color: rgba(241, 233, 225, 0.12);
+}
+
+
+/* Checkbox */
+
+html.dark-mode .trial-request-check span {
+    color: rgba(241, 233, 225, 0.63);
+}
+
+html.dark-mode .trial-request-check input {
+    accent-color: #E8DED2;
+}
+
+
+/* Submit Button */
+
+html.dark-mode .trial-request-submit {
+    background-color: #F1E9E1;
+    color: #211C18;
+}
+
+html.dark-mode .trial-request-submit:hover {
+    background-color: #E8DED2;
+    color: #211C18;
+}
+
+
+/* =========================================================
+   SECTION 5
+   SIDE SUPPORT CARD
+========================================================= */
+
+html.dark-mode .trial-request-info {
+    background-color: #181411;
+    border: 1px solid rgba(241, 233, 225, 0.08);
+}
+
+html.dark-mode .trial-request-info-icon {
+    background-color: #E8DED2;
+    color: #211C18;
+}
+
+html.dark-mode .trial-request-info>span {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-request-info h3,
+html.dark-mode .trial-request-info h3 em {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-request-info>p {
+    color: rgba(241, 233, 225, 0.68);
+}
+
+
+/* Contact Details */
+
+html.dark-mode .trial-request-contact {
+    border-top-color: rgba(241, 233, 225, 0.15);
+}
+
+html.dark-mode .trial-request-contact-item>i {
+    background-color: #2A2420;
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-request-contact-item small {
+    color: rgba(241, 233, 225, 0.45);
+}
+
+html.dark-mode .trial-request-contact-item strong {
+    color: #F1E9E1;
+}
+
+
+/* Info Note */
+
+html.dark-mode .trial-request-note {
+    border-top-color: rgba(241, 233, 225, 0.12);
+}
+
+html.dark-mode .trial-request-note>i {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-request-note p {
+    color: rgba(241, 233, 225, 0.58);
+}
+
+
+/* =========================================================
+   SECTION 6
+   FINAL CTA
+========================================================= */
+
+html.dark-mode .trial-action-cta-section {
+    background-color: #181411;
+}
+
+
+/* CTA Overlay */
+
+html.dark-mode .trial-action-cta-overlay {
+    background-color: rgba(12, 9, 8, 0.78);
+}
+
+
+/* CTA Content */
+
+html.dark-mode .trial-action-cta-label {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-action-cta-content h2 {
+    color: #F1E9E1;
+}
+
+html.dark-mode .trial-action-cta-content h2 em {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-action-cta-content>p {
+    color: rgba(241, 233, 225, 0.78);
+}
+
+
+/* Primary CTA */
+
+html.dark-mode .trial-action-cta-primary {
+    background-color: #F1E9E1;
+    color: #211C18;
+}
+
+html.dark-mode .trial-action-cta-primary:hover {
+    background-color: #E8DED2;
+    color: #211C18;
+}
+
+
+/* Secondary CTA */
+
+html.dark-mode .trial-action-cta-secondary {
+    color: #F1E9E1;
+    border-color: rgba(241, 233, 225, 0.50);
+}
+
+html.dark-mode .trial-action-cta-secondary:hover {
+    background-color: #F1E9E1;
+    border-color: #F1E9E1;
+    color: #211C18;
+}
+
+
+/* Support Link */
+
+html.dark-mode .trial-action-cta-help>i {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-action-cta-help span {
+    color: rgba(241, 233, 225, 0.65);
+}
+
+html.dark-mode .trial-action-cta-help a {
+    color: #E8DED2;
+}
+
+html.dark-mode .trial-action-cta-help a:hover {
+    color: #F1E9E1;
+}
+
+/* RTL - Phone Number Field */
+html[dir="rtl"] #trial-phone {
+    direction: rtl;
+    text-align: right;
+}
+
+/* HERO CONTENT - CENTER + MOVE UP */
+
+.home-hero-content {
+    left: 50%;
+    top: 38%;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0;
+    padding: 0 20px;
+
+    transform: translate(-50%, -55%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.home-hero-content h1,
+.home-hero-content p {
+    text-align: center;
+}
+
+.home-hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-hero-content .hero-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   HOME 2 HERO
+   FIND YOUR COMFORT — SECONDARY CTA
+========================================= */
+
+.home-two-hero-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 0 24px;
+
+    color: var(--primary-color) !important;
+    background: transparent !important;
+
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 4px !important;
+
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    transition: var(--transition);
+}
+
+.home-two-hero-secondary:hover {
+    color: var(--white) !important;
+    background-color: var(--primary-color) !important;
+
+    border-color: var(--primary-color) !important;
+}
+
+.header-booking-btn,
+.theme-toggle,
+.rtl-toggle {
+    border-radius: 5px;
+}
+
+.header-booking-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 42px;
+    padding: 0 18px;
+
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.header-booking-btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* =========================================
+   MOBILE BOOKING CTA
+========================================= */
+
+.mobile-booking-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+    min-height: 46px;
+
+    padding: 0 18px;
+
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-align: center;
+
+    transition: var(--transition);
+}
+
+.mobile-booking-btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.mobile-booking-btn i {
+    font-size: 11px;
+
+    transition: transform var(--transition);
+}
+
+.mobile-booking-btn:hover i {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   BOOKING HEADER
+========================================================= */
+
+.booking-header {
+    width: 100%;
+    min-height: 82px;
+
+    padding: 12px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--booking-card);
+    border-bottom: 1px solid var(--booking-border);
+
+    transition: var(--booking-transition);
+}
+
+.booking-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.booking-logo img {
+    display: block;
+    width: 105px;
+    height: auto;
+    object-fit: contain;
+}
+
+.booking-header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Theme + RTL Buttons */
+
+.booking-control {
+    width: 42px;
+    height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    color: var(--booking-text);
+
+    border: 1px solid var(--booking-border);
+    border-radius: var(--booking-radius);
+
+    transition: var(--booking-transition);
+}
+
+.booking-control:hover,
+.booking-control.active {
+    background: var(--booking-primary);
+    color: var(--booking-white);
+    border-color: var(--booking-primary);
+}
+
+.booking-control i {
+    font-size: 14px;
+}
+
+body.booking-page-body {
+    margin: 0;
+    padding: 0;
+}
+
+body.booking-page-body .booking-header {
+    margin-top: 0;
+}
+
+body.booking-page-body .booking-page {
+    padding-top: 20px;
+}
+
+/* =========================================================
+   MAIN BOOKING AREA
+========================================================= */
+
+.booking-page {
+    min-height: calc(100vh - 82px);
+
+    padding: 70px 20px 90px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.booking-section {
+    width: 100%;
+    max-width: 980px;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.booking-intro {
+    max-width: 650px;
+
+    margin: 0 auto 38px;
+
+    text-align: center;
+}
+
+.booking-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 13px;
+
+    color: var(--booking-muted);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.booking-intro h1 {
+    margin-bottom: 17px;
+
+    color: var(--booking-text);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 600;
+
+    line-height: 1.08;
+}
+
+.booking-intro h1 em {
+    color: var(--booking-primary);
+    font-style: normal;
+}
+
+.booking-intro p {
+    max-width: 570px;
+
+    margin: 0 auto;
+
+    color: var(--booking-muted);
+
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   BOOKING CARD
+========================================================= */
+
+.booking-card {
+    padding: 38px;
+
+    background: var(--booking-card);
+
+    border: 1px solid var(--booking-border);
+    border-radius: 10px;
+
+    box-shadow: 0 18px 50px rgba(59, 48, 43, 0.07);
+
+    transition: var(--booking-transition);
+}
+
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.booking-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 25px;
+    margin-bottom: 27px;
+
+    border-bottom: 1px solid var(--booking-border);
+}
+
+.booking-card-heading span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--booking-muted);
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.booking-card-heading h2 {
+    color: var(--booking-text);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.booking-card-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--booking-secondary);
+    color: var(--booking-primary);
+
+    border-radius: 50%;
+}
+
+.booking-card-icon i {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.booking-form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px 20px;
+}
+
+.booking-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking-field label {
+    color: var(--booking-text);
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.booking-field input,
+.booking-field select,
+.booking-field textarea {
+    width: 100%;
+
+    background: var(--booking-bg);
+    color: var(--booking-text);
+
+    border: 1px solid var(--booking-border);
+    border-radius: var(--booking-radius);
+
+    outline: none;
+
+    transition: var(--booking-transition);
+}
+
+.booking-field input,
+.booking-field select {
+    height: 52px;
+    padding: 0 15px;
+}
+
+.booking-field textarea {
+    min-height: 120px;
+
+    padding: 14px 15px;
+
+    resize: vertical;
+}
+
+.booking-field input::placeholder,
+.booking-field textarea::placeholder {
+    color: #aaa19a;
+}
+
+.booking-field input:focus,
+.booking-field select:focus,
+.booking-field textarea:focus {
+    border-color: var(--booking-primary);
+
+    background: var(--booking-card);
+
+    box-shadow:
+        0 0 0 3px rgba(59, 48, 43, 0.07);
+}
+
+
+/* Message */
+
+.booking-message-field {
+    margin-top: 22px;
+}
+
+/* =========================================
+   LIGHT MODE
+   THEME + RTL TOGGLE BORDER
+========================================= */
+
+html:not(.dark-mode) .booking-control {
+    background: #ffffff !important;
+    color: #3b302b !important;
+
+    border: 1px solid #d8cec5 !important;
+    border-radius: 6px !important;
+
+    box-shadow: none;
+}
+
+html:not(.dark-mode) .booking-control:hover,
+html:not(.dark-mode) .booking-control.active {
+    background: #3b302b !important;
+    color: #ffffff !important;
+
+    border-color: #3b302b !important;
+}
+
+/* =========================================
+   RTL DATE INPUT
+   Keep calendar icon on LEFT
+========================================= */
+
+html[dir="rtl"] #bookingDate {
+    direction: ltr !important;
+    text-align: right !important;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Calendar icon position */
+html[dir="rtl"] #bookingDate::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 15px;
+    right: auto;
+
+    cursor: pointer;
+}
+
+/* Date field needs positioning */
+html[dir="rtl"] #bookingDate {
+    position: relative;
+}
+
+/* =========================================
+   DARK MODE - DATE ICON
+========================================= */
+
+html.dark-mode #bookingDate::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* =========================================
+   LIGHT MODE - BOOKING INPUT BOXES
+   NO BORDER RADIUS
+========================================= */
+
+html:not(.dark-mode) .booking-field input,
+html:not(.dark-mode) .booking-field select,
+html:not(.dark-mode) .booking-field textarea {
+    background: #ffffff !important;
+
+    border: 1px solid #d8cec5 !important;
+    border-radius: 0 !important;
+
+    color: #302722 !important;
+    box-shadow: none !important;
+}
+
+
+/* Focus */
+
+html:not(.dark-mode) .booking-field input:focus,
+html:not(.dark-mode) .booking-field select:focus,
+html:not(.dark-mode) .booking-field textarea:focus {
+    border-color: #3b302b !important;
+    border-radius: 0 !important;
+
+    background: #ffffff !important;
+
+    box-shadow: 0 0 0 3px rgba(59, 48, 43, 0.06) !important;
+}
+
+
+/* Placeholder */
+
+html:not(.dark-mode) .booking-field input::placeholder,
+html:not(.dark-mode) .booking-field textarea::placeholder {
+    color: #aaa19a !important;
+}
+
+/* =========================================
+   BOOKING PAGE
+   MOBILE + iPAD MINI TOP SPACE FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    body.booking-page-body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body.booking-page-body .booking-header {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    body.booking-page-body .booking-page {
+        padding-top: 25px !important;
+    }
+}
+
+
+/* iPad Mini / Small Tablets */
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    body.booking-page-body .booking-header {
+        min-height: 64px !important;
+    }
+
+    body.booking-page-body .booking-page {
+        padding-top: 25px !important;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 599px) {
+
+    body.booking-page-body .booking-header {
+        min-height: 60px !important;
+    }
+
+    body.booking-page-body .booking-page {
+        padding-top: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body.booking-page-body .booking-page {
+        padding-top: 35px !important;
+    }
+}
+
+@media (max-width: 599px) {
+    body.booking-page-body .booking-page {
+        padding-top: 30px !important;
+    }
+}
+
+/* =========================================
+   HEADER - TOP SPACE
+========================================= */
+
+@media (max-width: 768px) {
+    body.booking-page-body .booking-header {
+        margin-top: 12px !important;
+    }
+}
+
+@media (max-width: 599px) {
+    body.booking-page-body .booking-header {
+        margin-top: 10px !important;
+    }
+}
+
+/* =========================================
+   DARK MODE - TOGGLE BUTTONS
+   SAME BORDER STYLE AS LIGHT MODE
+========================================= */
+
+html.dark-mode .booking-control {
+    width: 42px !important;
+    height: 42px !important;
+
+    border: 1px solid #d8cec5 !important;
+    border-radius: 6px !important;
+
+    background: transparent !important;
+    color: #eee3d8 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* Hover / Active */
+
+html.dark-mode .booking-control:hover,
+html.dark-mode .booking-control.active {
+    background: #eee3d8 !important;
+    color: #211c19 !important;
+
+    border: 1px solid #d8cec5 !important;
+}
+
+/* =========================================
+   DARK MODE - HEADER BOOKING BUTTON
+========================================= */
+
+html.dark-mode .header-booking-btn {
+    background: #eee3d8 !important;
+    color: #211c19 !important;
+
+    border-color: #eee3d8 !important;
+}
+
+html.dark-mode .header-booking-btn i {
+    color: #211c19 !important;
+}
+
+
+/* Hover */
+
+html.dark-mode .header-booking-btn:hover {
+    background: transparent !important;
+    color: #eee3d8 !important;
+
+    border-color: #eee3d8 !important;
+}
+
+html.dark-mode .header-booking-btn:hover i {
+    color: #eee3d8 !important;
+}
+
+/* =========================================================
+   FORM BOTTOM
+========================================================= */
+
+.booking-form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding-top: 25px;
+    margin-top: 25px;
+
+    border-top: 1px solid var(--booking-border);
+}
+
+.booking-note {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--booking-muted);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.booking-note i {
+    color: var(--booking-primary);
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.booking-submit {
+    min-height: 52px;
+
+    padding: 0 23px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    flex-shrink: 0;
+
+    background: var(--booking-primary);
+    color: var(--booking-white);
+
+    border: 1px solid var(--booking-primary);
+    border-radius: var(--booking-radius);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: var(--booking-transition);
+}
+
+.booking-submit:hover {
+    background: transparent;
+    color: var(--booking-primary);
+}
+
+.booking-submit i {
+    font-size: 11px;
+    transition: transform 0.3s ease;
+}
+
+.booking-submit:hover i {
+    transform: translateX(3px);
+}
+
+.booking-submit.submitted {
+    background: #52604b;
+    border-color: #52604b;
+    color: #fff;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark-mode {
+    --booking-primary: #eee3d8;
+    --booking-secondary: #332b27;
+
+    --booking-bg: #171311;
+    --booking-card: #211c19;
+
+    --booking-text: #f2eae3;
+    --booking-muted: #b7aca4;
+
+    --booking-border: rgba(242, 234, 227, 0.13);
+
+    --booking-white: #211c19;
+}
+
+html.dark-mode .booking-logo img {
+    filter: brightness(0) invert(1);
+}
+
+html.dark-mode .booking-card {
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+html.dark-mode .booking-field input,
+html.dark-mode .booking-field select,
+html.dark-mode .booking-field textarea {
+    background: #191512;
+    color: #f2eae3;
+}
+
+html.dark-mode .booking-field input:focus,
+html.dark-mode .booking-field select:focus,
+html.dark-mode .booking-field textarea:focus {
+    background: #211c19;
+
+    box-shadow:
+        0 0 0 3px rgba(238, 227, 216, 0.07);
+}
+
+html.dark-mode .booking-submit {
+    background: #eee3d8;
+    color: #211c19;
+    border-color: #eee3d8;
+}
+
+html.dark-mode .booking-submit:hover {
+    background: transparent;
+    color: #eee3d8;
+}
+
+html.dark-mode .booking-control {
+    color: #eee3d8;
+}
+
+html.dark-mode .booking-control:hover,
+html.dark-mode .booking-control.active {
+    background: #eee3d8;
+    color: #211c19;
+    border-color: #eee3d8;
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] body {
+    text-align: right;
+}
+
+html[dir="rtl"] .booking-intro {
+    text-align: center;
+}
+
+html[dir="rtl"] .booking-card-heading {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .booking-form-bottom {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .booking-field input,
+html[dir="rtl"] .booking-field select,
+html[dir="rtl"] .booking-field textarea {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .booking-field input::placeholder,
+html[dir="rtl"] .booking-field textarea::placeholder {
+    text-align: right;
+}
+
+html[dir="rtl"] .booking-note {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .booking-submit:hover i {
+    transform: translateX(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .booking-header {
+        min-height: 72px;
+        padding: 10px 24px;
+    }
+
+    .booking-page {
+        min-height: calc(100vh - 72px);
+        padding: 55px 18px 70px;
+    }
+
+    .booking-card {
+        padding: 28px 24px;
+    }
+
+    .booking-form-grid {
+        gap: 18px 15px;
+    }
+
+    .booking-form-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .booking-submit {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .booking-header {
+        padding: 10px 17px;
+    }
+
+    .booking-logo img {
+        width: 88px;
+    }
+
+    .booking-control {
+        width: 39px;
+        height: 39px;
+    }
+
+    .booking-page {
+        padding: 45px 14px 55px;
+    }
+
+    .booking-intro {
+        margin-bottom: 28px;
+    }
+
+    .booking-intro h1 {
+        font-size: 35px;
+    }
+
+    .booking-intro p {
+        font-size: 13px;
+    }
+
+    .booking-card {
+        padding: 23px 17px;
+        border-radius: 8px;
+    }
+
+    .booking-card-heading {
+        padding-bottom: 20px;
+        margin-bottom: 22px;
+    }
+
+    .booking-card-heading h2 {
+        font-size: 24px;
+    }
+
+    .booking-card-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .booking-form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .booking-message-field {
+        margin-top: 18px;
+    }
+
+    .booking-form-bottom {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .booking-note {
+        align-items: flex-start;
+        font-size: 11px;
+    }
 }
