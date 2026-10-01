@@ -26090,49 +26090,49 @@ html.dark-mode .about-gallery-footer p {
 ========================================================= */
 
 html[dir="rtl"] .home-hero-content {
-    left: auto !important;
-    right: 0 !important;
+    left: 50% !important;
+    right: auto !important;
 
     width: 55% !important;
     max-width: 650px !important;
 
-    text-align: right !important;
+    text-align: center !important;
 
-    transform: translateY(-85%) !important;
+    transform: translate(-50%, -50%) !important;
 }
 
 html[dir="rtl"] .hero-eyebrow {
     display: block !important;
     width: 100% !important;
 
-    text-align: right !important;
+    text-align: center !important;
 }
 
 html[dir="rtl"] .home-hero-content h1 {
     max-width: 620px !important;
 
-    margin-right: 0 !important;
+    margin-right: auto !important;
     margin-left: auto !important;
 
-    text-align: right !important;
+    text-align: center !important;
 }
 
 html[dir="rtl"] .home-hero-content h1 span {
     display: block !important;
-    text-align: right !important;
+    text-align: center !important;
 }
 
 html[dir="rtl"] .home-hero-content p {
     max-width: 530px !important;
 
-    margin-right: 0 !important;
+    margin-right: auto !important;
     margin-left: auto !important;
 
-    text-align: right !important;
+    text-align: center !important;
 }
 
 html[dir="rtl"] .hero-btn {
-    margin-right: 0 !important;
+    margin-right: auto !important;
     margin-left: auto !important;
 
     direction: rtl !important;
@@ -26908,24 +26908,24 @@ html[dir="rtl"] .auth-page-controls .auth-control-btn i {
     }
 
     html[dir="rtl"] .home-hero-content {
-        left: auto !important;
-        right: 0 !important;
+        left: 50% !important;
+        right: auto !important;
 
-        width: 100% !important;
-        max-width: 100% !important;
+        width: calc(100% - 30px) !important;
+        max-width: 650px !important;
 
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
 
-        text-align: right !important;
+        text-align: center !important;
 
-        transform: translateY(-50%) !important;
+        transform: translate(-50%, -50%) !important;
     }
 
     html[dir="rtl"] .home-hero-content h1,
     html[dir="rtl"] .home-hero-content p,
     html[dir="rtl"] .hero-eyebrow {
-        text-align: right !important;
+        text-align: center !important;
     }
 
     html[dir="rtl"] .hero-btn {
@@ -27046,15 +27046,15 @@ html.dark-mode[dir="rtl"] .home-hero-content .hero-btn i {
     color: #211C18 !important;
 }
 
-/* Keep RTL alignment */
+/* Keep the hero centered in RTL dark mode */
 html.dark-mode[dir="rtl"] .home-hero-content {
-    text-align: right !important;
+    text-align: center !important;
 }
 
 html.dark-mode[dir="rtl"] .hero-eyebrow,
 html.dark-mode[dir="rtl"] .home-hero-content h1,
 html.dark-mode[dir="rtl"] .home-hero-content p {
-    text-align: right !important;
+    text-align: center !important;
 }
 
 /* =========================================================
@@ -29693,6 +29693,8 @@ html.dark-mode .header-booking-btn:hover {
 html.dark-mode .header-booking-btn:hover i {
     color: #eee3d8 !important;
 }
+
+
 
 /* =========================================================
    FORM BOTTOM
