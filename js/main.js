@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     "aria-label",
                     "Switch to light mode"
                 );
+                button.setAttribute("aria-pressed", "true");
 
             } else {
 
@@ -117,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     "aria-label",
                     "Switch to dark mode"
                 );
+                button.setAttribute("aria-pressed", "false");
 
             }
 
@@ -180,6 +182,9 @@ document.addEventListener("DOMContentLoaded", function () {
             if (status) {
                 status.textContent = isRTL ? "On" : "Off";
             }
+
+            button.classList.toggle("active", isRTL);
+            button.setAttribute("aria-pressed", isRTL ? "true" : "false");
 
             button.setAttribute(
                 "aria-label",
