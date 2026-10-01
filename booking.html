@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comfort House</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="booking-page-body">
+
+    <!-- =========================================
+         BOOKING HEADER
+    ========================================== -->
+
+    <header class="booking-header">
+
+        <a href="index.html" class="booking-logo">
+            <img src="images/logo.png" alt="Comfort House">
+        </a>
+
+        <div class="booking-header-controls">
+
+            <button type="button" class="booking-control theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button type="button" class="booking-control rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                aria-pressed="false">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         BOOKING MAIN
+    ========================================== -->
+
+    <main class="booking-page">
+
+        <section class="booking-section">
+
+            <div class="booking-intro">
+
+                <span class="booking-eyebrow">
+                    YOUR COMFORT, YOUR WAY
+                </span>
+
+                <h1>
+                    Book Your
+                    <em>Perfect Sleep.</em>
+                </h1>
+
+                <p>
+                    Tell us what you are looking for and our comfort
+                    specialists will help you find the right mattress
+                    and sleep solution.
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+                 BOOKING FORM CARD
+            ================================== -->
+
+            <div class="booking-card">
+
+                <div class="booking-card-heading">
+                    <div>
+                        <span>BOOKING REQUEST</span>
+                        <h2>Let's Find Your Comfort</h2>
+                    </div>
+
+                    <div class="booking-card-icon">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                </div>
+
+
+                <form class="comfort-booking-form">
+
+                    <div class="booking-form-grid">
+
+                        <!-- Full Name -->
+                        <div class="booking-field">
+                            <label for="bookingName">
+                                Full Name
+                            </label>
+
+                            <input type="text" id="bookingName" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="booking-field">
+                            <label for="bookingPhone">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" id="bookingPhone" name="phone" placeholder="Enter your phone number"
+                                required>
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="booking-field">
+                            <label for="bookingEmail">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="bookingEmail" name="email" placeholder="Enter your email address">
+                        </div>
+
+
+                        <!-- Service -->
+                        <div class="booking-field">
+                            <label for="bookingService">
+                                What Would You Like To Book?
+                            </label>
+
+                            <select id="bookingService" name="service" required>
+                                <option value="" selected disabled>
+                                    Select an option
+                                </option>
+
+                                <option value="mattress-trial">
+                                    Mattress Trial
+                                </option>
+
+                                <option value="mattress-consultation">
+                                    Mattress Consultation
+                                </option>
+
+                                <option value="home-consultation">
+                                    Home Comfort Consultation
+                                </option>
+
+                                <option value="store-visit">
+                                    Store Visit
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <!-- Date -->
+                        <div class="booking-field">
+                            <label for="bookingDate">
+                                Preferred Date
+                            </label>
+
+                            <input type="date" id="bookingDate" name="date" required>
+                        </div>
+
+
+                        <!-- Time -->
+                        <div class="booking-field">
+                            <label for="bookingTime">
+                                Preferred Time
+                            </label>
+
+                            <select id="bookingTime" name="time" required>
+                                <option value="" selected disabled>
+                                    Select a time
+                                </option>
+
+                                <option value="10-12">
+                                    10:00 AM – 12:00 PM
+                                </option>
+
+                                <option value="12-2">
+                                    12:00 PM – 2:00 PM
+                                </option>
+
+                                <option value="2-4">
+                                    2:00 PM – 4:00 PM
+                                </option>
+
+                                <option value="4-6">
+                                    4:00 PM – 6:00 PM
+                                </option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Message -->
+
+                    <div class="booking-field booking-message-field">
+
+                        <label for="bookingMessage">
+                            Anything We Should Know?
+                        </label>
+
+                        <textarea id="bookingMessage" name="message" rows="4"
+                            placeholder="Tell us about your sleep preferences or requirements..."></textarea>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <div class="booking-form-bottom">
+
+                        <p class="booking-note">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Our team will contact you to confirm your booking.
+                        </p>
+
+                        <button type="submit" class="booking-submit">
+                            Confirm Booking
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         BOOKING PAGE JS
+    ========================================== -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const bookingForm =
+                document.querySelector(".comfort-booking-form");
+
+            bookingForm.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const button =
+                    bookingForm.querySelector(".booking-submit");
+
+                button.innerHTML =
+                    'Request Sent <i class="fa-solid fa-check"></i>';
+
+                button.classList.add("submitted");
+
+            });
+
+        });
+    </script>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
